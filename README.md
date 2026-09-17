@@ -4,9 +4,9 @@
 
 # Awesome JEV [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> The research map behind System One models: the papers, open models and evaluations that say what Jev is, what it replaces, and how to measure it.
+> Papers, open models and evaluations behind System One models, the class of AI that answers typed questions with calibrated probabilities in one pass.
 
-[![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/Awesome-JEV/)
+[![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
 ![Entries](https://img.shields.io/badge/entries-161-1B2A6B?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-82-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
@@ -46,27 +46,27 @@
 
 ## ✅ What Gets In
 
-Jev is days old and the literature about it is thin, so this list is sized to the evidence. An entry is in when it passes one of three tests.
+Jev shipped on 15 September 2026 and little has been written about it, so this list stays small. An entry has to pass one of three tests.
 
-- **Primary.** It is by TypeSafe, or it directly reproduces or evaluates Jev.
-- **Named.** TypeSafe's own materials or the launch discussion named it as what Jev is, or what Jev replaces.
+- **Primary.** By TypeSafe, or a direct reproduction or evaluation of Jev.
+- **Named.** Named by TypeSafe's own materials, or by the launch discussion, as what Jev is or what Jev replaces.
 - **Same shape.** The answer set is fixed before inference, the model returns a probability per option, and no free text is generated.
 
-Everything else, however good, lives in the Related Lists section at the end.
+Anything else, however good, is left to the related lists at the end.
 
 ---
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 161 entries across 12 sections, three days after Jev shipped. PRs welcome.
+🚀 **2026-09 · Repository launch.** 161 entries in 12 sections. PRs welcome.
 
-🔓 **2026-09 · Open reproductions tracked.** 17 open models and codebases rebuild the System One shape; 16 independent evaluations of Jev are collected under Benchmarks & Independent Evaluations.
+🔓 **2026-09 · Open reproductions and evaluations.** 17 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Benchmarks & Independent Evaluations.
 
 ---
 
 ## ⚡ System One & Jev
 
-Primary sources: what TypeSafe shipped, how it is meant to be called, and what it says does not work yet.
+What TypeSafe has published: the launch post, the docs, the SDKs, and the failure modes it admits to.
 
 - ⭐ [Introducing System One Models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), The launch post: state in, typed probabilistic decisions out, RLCD training, 70 to 500 ms, $0.042 per MTok. [![TypeSafe](https://img.shields.io/badge/TypeSafe-official-2F80ED?style=flat-square)](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
 - ⭐ [Primitives: Choice, Score, Noul](https://docs.typesafe.ai/primitives), The three typed question shapes and the probability-per-option answers they return. [![TypeSafe](https://img.shields.io/badge/TypeSafe-official-2F80ED?style=flat-square)](https://docs.typesafe.ai/primitives)
@@ -91,7 +91,7 @@ Primary sources: what TypeSafe shipped, how it is meant to be called, and what i
 
 ## 🔓 Open Reproductions
 
-Open weights and code that rebuild the System One shape, typed questions in and calibrated probabilities out, from encoders, small decoders and constrained decoding.
+Open weights and code that rebuild the System One shape from encoders, small decoders and constrained decoding.
 
 - ⭐ [OpenJev](https://github.com/TheoLeeCJ/openjev), Can something like Jev run on a 3090 at home; open baseline for direct typed option scoring. [![Code](https://img.shields.io/github/stars/TheoLeeCJ/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/TheoLeeCJ/openjev) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://openjev.com)
 - ⭐ [Jevlike](https://github.com/vinnylarouge/jevlike), From-scratch model with Jev's exact shape: text plus N options in, one probability per option out, option-attention head, Doom and chess demos. [![Code](https://img.shields.io/github/stars/vinnylarouge/jevlike?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/vinnylarouge/jevlike)
@@ -115,7 +115,7 @@ Open weights and code that rebuild the System One shape, typed questions in and 
 
 ## 🧠 Dual-Process Theory, Fast and Slow AI
 
-Where the name comes from: the psychology of System 1 and System 2, and the AI systems that split a fast intuitive decider from a slow deliberate reasoner.
+The psychology the name comes from, and the AI systems that pair a fast intuitive decider with a slow reasoner.
 
 - ⭐ [Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow), The source TypeSafe cites for naming Jev after System 1, fast intuitive judgement with no deliberation. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)
 - ⭐ [Thinking Fast and Slow in AI](https://arxiv.org/abs/2010.06002). ![AAAI 2021](https://img.shields.io/badge/AAAI_2021-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-2010.06002-B31B1B?style=flat-square) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2010.06002&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2010.06002) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://ojs.aaai.org/index.php/AAAI/article/view/17765)
@@ -134,7 +134,7 @@ Where the name comes from: the psychology of System 1 and System 2, and the AI s
 
 ## 🎯 Zero-Shot & Prompted Classifiers
 
-The model class Jev belongs to: encoders, label-conditioned models and rerankers that map text to a label, a probability or a rank without generating prose.
+Encoders, label-conditioned models and rerankers that map text to a label, a probability or a rank without writing prose. This is the model class Jev belongs to.
 
 - ⭐ [BERT](https://arxiv.org/abs/1810.04805), "Pre-training of Deep Bidirectional Transformers for Language Understanding". ![arXiv](https://img.shields.io/badge/arXiv-1810.04805-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/google-research/bert?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/google-research/bert) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F1810.04805&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/1810.04805)
 - ⭐ [Zero-shot Classification as Entailment](https://arxiv.org/abs/1909.00161), "Benchmarking Zero-shot Text Classification: Datasets, Evaluation and Entailment Approach". ![EMNLP 2019](https://img.shields.io/badge/EMNLP_2019-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-1909.00161-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/yinwenpeng/BenchmarkingZeroShot?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/yinwenpeng/BenchmarkingZeroShot) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F1909.00161&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/1909.00161)
@@ -154,7 +154,7 @@ The model class Jev belongs to: encoders, label-conditioned models and rerankers
 
 ## ⚖️ Judges, Verifiers & Reward Models
 
-The incumbent for Score and Noul: models whose output is a verdict, and what is known about their biases and calibration.
+Models whose output is a verdict or a score. Jev's Score and Noul primitives are sold as a replacement for this layer.
 
 - ⭐ [InstructGPT reward model](https://arxiv.org/abs/2203.02155), "Training language models to follow instructions with human feedback". ![arXiv](https://img.shields.io/badge/arXiv-2203.02155-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/openai/following-instructions-human-feedback?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/openai/following-instructions-human-feedback) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2203.02155&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2203.02155)
 - ⭐ [MT-Bench](https://arxiv.org/abs/2306.05685), "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena". ![NeurIPS 2023](https://img.shields.io/badge/NeurIPS_2023-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-2306.05685-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/lm-sys/FastChat?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/lm-sys/FastChat) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2306.05685&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2306.05685)
@@ -171,7 +171,7 @@ The incumbent for Score and Noul: models whose output is a verdict, and what is 
 
 ## 🔀 Routing, Cascades & Selection
 
-The Choice primitive in production: which model, tool, handler or path a request takes, decided by a cheap model in front of expensive ones.
+Deciding which model, tool or path a request takes, with a cheap model in front of expensive ones. This is Jev's Choice primitive in production.
 
 - ⭐ [FrugalGPT](https://arxiv.org/abs/2305.05176), "How to Use Large Language Models While Reducing Cost and Improving Performance". ![TMLR 2024](https://img.shields.io/badge/TMLR_2024-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-2305.05176-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/stanford-futuredata/FrugalGPT?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/stanford-futuredata/FrugalGPT) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2305.05176&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2305.05176)
 - ⭐ [RouteLLM](https://arxiv.org/abs/2406.18665), "Learning to Route LLMs with Preference Data". ![arXiv](https://img.shields.io/badge/arXiv-2406.18665-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/lm-sys/RouteLLM) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2406.18665&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2406.18665)
@@ -189,7 +189,7 @@ The Choice primitive in production: which model, tool, handler or path a request
 
 ## 🛡️ Guardrails & Safety Classifiers
 
-Allow, block or escalate: content-safety classifiers, prompt-injection detectors and agent action gates.
+Classifiers that allow, block or escalate: content safety, prompt injection, agent action gates.
 
 - ⭐ [Llama Guard](https://arxiv.org/abs/2312.06674), "LLM-based Input-Output Safeguard for Human-AI Conversations". ![arXiv](https://img.shields.io/badge/arXiv-2312.06674-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/meta-llama/PurpleLlama?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/meta-llama/PurpleLlama) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2312.06674&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2312.06674)
 - ⭐ [Qwen3Guard Technical Report](https://arxiv.org/abs/2510.14276). ![arXiv](https://img.shields.io/badge/arXiv-2510.14276-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/QwenLM/Qwen3Guard?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/QwenLM/Qwen3Guard) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2510.14276&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2510.14276) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/Qwen/Qwen3Guard-Gen-8B)
@@ -209,7 +209,7 @@ Allow, block or escalate: content-safety classifiers, prompt-injection detectors
 
 ## 📏 Calibration & Uncertainty
 
-The literature behind the central claim, probabilities you can threshold in code: proper scoring rules, LLM confidence, RL for calibrated confidence, conformal prediction, selective prediction.
+Proper scoring rules, LLM confidence, reinforcement learning for calibrated confidence, conformal and selective prediction. The literature behind probabilities you can threshold in code.
 
 - ⭐ [Strictly Proper Scoring Rules](https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf), Defines the strictly proper scoring rules whose optimum is a calibrated probability, the objective RLCD-style confidence training rewards. ![JASA 2007](https://img.shields.io/badge/JASA_2007-4B5563?style=flat-square) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://sites.stat.washington.edu/raftery/Research/PDF/Gneiting2007jasa.pdf)
 - ⭐ [On Calibration of Modern Neural Networks](https://arxiv.org/abs/1706.04599). ![ICML 2017](https://img.shields.io/badge/ICML_2017-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-1706.04599-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/gpleiss/temperature_scaling?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/gpleiss/temperature_scaling) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F1706.04599&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/1706.04599)
@@ -232,7 +232,7 @@ The literature behind the central claim, probabilities you can threshold in code
 
 ## 🧱 Typed & Constrained Outputs
 
-The incumbent way to get type-safe values out of a generator: grammar-constrained decoding, structured-output libraries, typed prompt programming, and what the constraints cost.
+Grammar-constrained decoding, structured-output libraries, typed prompt programming, and the studies of what the constraints cost. The incumbent way to get type-safe values out of a generator.
 
 - ⭐ [Outlines](https://arxiv.org/abs/2307.09702), "Efficient Guided Generation for Large Language Models". ![arXiv](https://img.shields.io/badge/arXiv-2307.09702-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/dottxt-ai/outlines?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/dottxt-ai/outlines) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2307.09702&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2307.09702) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://dottxt-ai.github.io/outlines/)
 - ⭐ [Let Me Speak Freely?](https://arxiv.org/abs/2408.02442), "A Study on the Impact of Format Restrictions on Performance of Large Language Models". ![EMNLP 2024 Industry Track](https://img.shields.io/badge/EMNLP_2024_Industry_Track-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-2408.02442-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/appier-research/structure-gen?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/appier-research/structure-gen) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2408.02442&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2408.02442)
@@ -253,7 +253,7 @@ The incumbent way to get type-safe values out of a generator: grammar-constraine
 
 ## ⏩ Non-Autoregressive & Parallel Inference
 
-Why one pass can answer many questions: masked diffusion LMs, non-autoregressive generation, encoder revivals, multi-token decoding and prefix sharing.
+Masked diffusion language models, encoder revivals and prefix sharing. Why one pass can answer many questions.
 
 - ⭐ [LLaDA](https://arxiv.org/abs/2502.09992), "Large Language Diffusion Models". ![arXiv](https://img.shields.io/badge/arXiv-2502.09992-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/ML-GSAI/LLaDA?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/ML-GSAI/LLaDA) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2502.09992&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2502.09992) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://ml-gsai.github.io/LLaDA-demo/)
 - ⭐ [MDLM](https://arxiv.org/abs/2406.07524), "Simple and Effective Masked Diffusion Language Models". ![NeurIPS 2024](https://img.shields.io/badge/NeurIPS_2024-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-2406.07524-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/kuleshov-group/mdlm?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/kuleshov-group/mdlm) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2406.07524&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2406.07524) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://s-sahoo.com/mdlm/)
@@ -269,7 +269,7 @@ Why one pass can answer many questions: masked diffusion LMs, non-autoregressive
 
 ## 📊 Benchmarks & Independent Evaluations
 
-How the decision layer is measured, and every independent test of Jev published so far.
+Benchmarks for the jobs Jev sells, and every independent test of Jev published so far.
 
 - [MTEB](https://arxiv.org/abs/2210.07316), "Massive Text Embedding Benchmark". ![EACL 2023](https://img.shields.io/badge/EACL_2023-4B5563?style=flat-square) ![arXiv](https://img.shields.io/badge/arXiv-2210.07316-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/embeddings-benchmark/mteb?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/embeddings-benchmark/mteb) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2210.07316&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2210.07316) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://huggingface.co/spaces/mteb/leaderboard)
 - [RewardBench](https://arxiv.org/abs/2403.13787), "Evaluating Reward Models for Language Modeling". ![arXiv](https://img.shields.io/badge/arXiv-2403.13787-B31B1B?style=flat-square) [![Code](https://img.shields.io/github/stars/allenai/reward-bench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/allenai/reward-bench) [![Daily Papers](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fhuggingface.co%2Fapi%2Fpapers%2F2403.13787&query=%24.upvotes&label=%F0%9F%A4%97%20Daily&color=FFD21E&style=flat-square)](https://huggingface.co/papers/2403.13787) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-06B6D4?style=flat-square)](https://huggingface.co/datasets/allenai/reward-bench) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://huggingface.co/spaces/allenai/reward-bench)
@@ -297,7 +297,7 @@ How the decision layer is measured, and every independent test of Jev published 
 
 ## 📰 Commentary & Analysis
 
-Reporting and technical commentary that separates the launch claims from the evidence.
+Reporting and technical commentary that checks the launch claims against the evidence.
 
 - ⭐ [AINews: Jev, a System One Model that only decides](https://www.latent.space/p/ainews-jev-a-system-one-model-that), Latent Space roundup of the launch and the HN mapping onto encoders, GLiNER, constrained decoding and DSPy. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.latent.space/p/ainews-jev-a-system-one-model-that)
 - ⭐ [Agentpedia claim-vs-evidence guide](https://agentpedia.codes/blog/jev-system-one-models), Claim-by-claim audit separating verified Jev pricing and latency from unproven calibration; puts aggregate accuracy at 67.8% versus opus 5's 73.1%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentpedia.codes/blog/jev-system-one-models)
@@ -311,7 +311,7 @@ Reporting and technical commentary that separates the launch claims from the evi
 
 ## 🔗 Related Lists
 
-Project directories for Jev, and the neighbouring reading lists that cover each lineage at full depth.
+Project directories for Jev, and the reading lists that cover each lineage in depth.
 
 - [awesome-jev (hellogumbo)](https://github.com/hellogumbo/awesome-jev), 409-entry directory of projects built on Jev, with a searchable site. [![List](https://img.shields.io/github/stars/hellogumbo/awesome-jev?style=flat-square&logo=github&label=List&color=181717)](https://github.com/hellogumbo/awesome-jev)
 - [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe), Official resources and community projects for TypeSafe, with limitation notes per entry. [![List](https://img.shields.io/github/stars/AbdelStark/awesome-typesafe?style=flat-square&logo=github&label=List&color=181717)](https://github.com/AbdelStark/awesome-typesafe)
@@ -341,7 +341,7 @@ Open a pull request. Link the paper or the primary page, add the code repository
 @misc{awesome_jev,
   title        = {Awesome JEV},
   year         = {2026},
-  howpublished = {\url{https://github.com/OmniJev/Awesome-JEV}},
-  note         = {The research map behind System One models and typed decisions}
+  howpublished = {\url{https://github.com/OmniJev/awesome-jev}},
+  note         = {Papers, open models and evaluations behind System One models and typed decisions}
 }
 ```
