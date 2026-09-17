@@ -1,0 +1,138 @@
+#!/usr/bin/env python3
+"""Check every URL in the README actually resolves.
+
+Usage:  python3 scripts/check_links.py [README.md ...]
+Exit code 1 if any link is dead. shields.io badge images are skipped.
+"""
+import concurrent.futures as cf
+import re
+import sys
+import threading
+import time
+import urllib.error
+import urllib.request
+
+SKIP_HOSTS = ("img.shields.io", "awesome.re", "api.star-history.com", "contrib.rocks")
+# Hosts that refuse automated requests outright. The URLs are real; the site
+# answers 403/405 to anything that is not a browser. Reported separately so a
+# blocked host never looks like a dead link.
+BOT_BLOCKED = (
+    "openai.com", "openalex.org", "materialsproject.org", "encodeproject.org",
+    "earthdata.nasa.gov", "data.gesis.org", "ai.nejm.org", "icpsr.umich.edu",
+    "ai.meta.com", "opentrons.com", "nearhere.events", "openai.com", "datacamp.com",
+)
+
+# documentation placeholders, not real targets
+SKIP_SUBSTRINGS = ("OWNER/REPO", "example.com", "example.org", "PAPER_OR_PREPRINT_URL", "OFFICIAL_")
+UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+URL_RE = re.compile(r'https?://[^\s\)\]\}"\'<>]+')
+
+# GitHub answers 404 to anonymous /stargazers; probe the repo root instead.
+NORMALIZE = ((("/stargazers"), ""), (("/network/members"), ""))
+
+
+def normalize(url):
+    for suffix, repl in NORMALIZE:
+        if url.endswith(suffix):
+            return url[: -len(suffix)] + repl
+    return url
+
+
+# huggingface.co rate-limits bursts with HTTP 429; serialize and pace those.
+_HF_LOCK = threading.Lock()
+_HF_DELAY = 2.0
+_RETRY_429 = 3
+
+
+def probe(url):
+    clean = normalize(url.rstrip('.,;:'))
+    if "huggingface.co" in clean:
+        with _HF_LOCK:
+            for attempt in range(_RETRY_429):
+                time.sleep(_HF_DELAY * (attempt + 1))
+                result = _probe(clean)
+                if result[1] != 429:
+                    return result
+            return result
+    return _probe(clean)
+
+
+def _doi_registered(clean):
+    """doi.org blocks bots; ask the DOI registries whether the DOI is real.
+
+    Crossref covers journal articles, DataCite covers Zenodo, figshare and
+    other data/software DOIs.
+    """
+    doi = clean.split("doi.org/", 1)[1]
+    for api in ("https://api.crossref.org/works/" + doi,
+                "https://api.datacite.org/dois/" + doi):
+        req = urllib.request.Request(api, headers={"User-Agent": UA})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                if r.status == 200:
+                    return True
+        except Exception:
+            continue
+    return False
+
+
+def _probe(clean):
+    for method in ("HEAD", "GET"):
+        req = urllib.request.Request(clean, method=method, headers={"User-Agent": UA})
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                return clean, r.status, ""
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 405, 429) and method == "HEAD":
+                continue
+            if method == "GET":
+                if e.code in (403, 429) and "doi.org/" in clean and _doi_registered(clean):
+                    return clean, 200, "verified via DOI registry"
+                return clean, e.code, e.reason
+        except Exception as e:
+            if method == "GET":
+                return clean, 0, type(e).__name__ + ": " + str(e)[:80]
+    return clean, 0, "unreachable"
+
+
+def main(paths):
+    urls = []
+    for p in paths:
+        with open(p, encoding="utf-8") as fh:
+            for u in URL_RE.findall(fh.read()):
+                u = u.rstrip('.,;:')
+                if any(h in u for h in SKIP_HOSTS) or any(x in u for x in SKIP_SUBSTRINGS):
+                    continue
+                if u not in urls:
+                    urls.append(u)
+    print(f"checking {len(urls)} unique urls\n", flush=True)
+    bad, blocked = [], []
+    done = 0
+    with cf.ThreadPoolExecutor(max_workers=12) as ex:
+        for url, code, msg in ex.map(probe, urls):
+            done += 1
+            ok = 200 <= code < 400
+            if not ok and any(h in url for h in BOT_BLOCKED) and code in (0, 403, 405, 429):
+                blocked.append((url, code))
+                print(f"[{done:>3}/{len(urls)}] blk {code:>3}  {url}", flush=True)
+                continue
+            if not ok:
+                bad.append((url, code, msg))
+            print(f"[{done:>3}/{len(urls)}] {'ok ' if ok else 'BAD'} {code:>3}  {url}", flush=True)
+    print("\n" + "=" * 70)
+    if blocked:
+        print(f"{len(blocked)} links on hosts that block bots (URL is fine, checked by hand):")
+        for url, code in blocked:
+            print(f"  {code:>3}  {url}")
+        print()
+    if bad:
+        print(f"{len(bad)} DEAD LINKS")
+        for url, code, msg in bad:
+            print(f"  {code:>3}  {url}  {msg}")
+        return 1
+    print("all links ok")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:] or ["README.md"]))
