@@ -12,7 +12,7 @@ Jev is new and the literature about it is thin, so the list is sized to the evid
 | **Named** | TypeSafe's own materials or the launch discussion named it as what Jev is, or what Jev replaces |
 | **Same shape** | the answer set is fixed before inference, the model returns a probability per option, and no free text is generated |
 
-Say in your pull request which test the entry passes, in one line. Work that is merely adjacent (general LLM calibration, general routing, general safety) belongs in the lists under [Related Lists](README.md#-related-lists), however good it is.
+Say in your pull request which test the entry passes, in one line. Work that is merely adjacent (general LLM calibration, general routing, general safety) stays out, however good it is.
 
 Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope here; the directories in Related Lists collect them.
 
@@ -29,18 +29,13 @@ Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope he
 |:--|:--|
 | ⚡ System One & Jev | TypeSafe's own pages, SDKs, essays and the launch discussion |
 | 🔓 Open Reproductions | open weights or code that rebuild the System One shape |
-| 🧠 Dual-Process Theory, Fast and Slow AI | the System 1 / System 2 lineage the name comes from |
-| 🎯 Zero-Shot & Prompted Classifiers | label-conditioned classifiers, encoders and rerankers with a fixed answer set |
-| ⚖️ Judges, Verifiers & Reward Models | models whose output is a verdict or a scalar score |
-| 🔀 Routing, Cascades & Selection | models that choose a model, tool or path from a fixed set |
-| 🛡️ Guardrails & Safety Classifiers | allow / block / escalate classifiers and agent action gates |
-| 📏 Calibration & Uncertainty | proper scoring rules, LLM confidence, RL for calibrated confidence, conformal and selective prediction |
-| 🧱 Typed & Constrained Outputs | the incumbent ways to get type-safe values out of a generator |
-| ⏩ Non-Autoregressive & Parallel Inference | why one pass can answer many questions |
-| 📊 Benchmarks & Independent Evaluations | benchmarks for the typed-decision jobs, and every independent test of Jev |
-| 📰 Commentary & Analysis | reporting and analysis that separates claims from evidence |
+| 📊 Independent Evaluations | any published test of Jev, with its headline number |
+| 📰 Commentary & Analysis | reporting and analysis that checks the claims against the evidence |
+| 🧬 The Shape Before Jev | earlier work with the same input and output shape |
+| 🧱 What Jev Is Sold Against | the incumbents TypeSafe or the launch discussion named |
+| 🧠 Where the Name Comes From | System 1, the bitter lesson, the Jevons paradox |
 
-Give each resource one home. Do not duplicate it across sections.
+The three lineage sections together stay under thirty entries. A new lineage entry needs a named mention or an exact match of shape, and usually displaces a weaker one. Give each resource one home. Do not duplicate it across sections.
 
 ## Entry format
 
