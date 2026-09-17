@@ -34,7 +34,7 @@
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
 - [🧠 Where the Name Comes From](#-where-the-name-comes-from) (5)
-- [🔗 Related Lists](#-related-lists) (6)
+- [🔗 Related Lists](#-related-lists) (2)
 
 ---
 
@@ -185,12 +185,8 @@ System 1 in Kahneman's sense, the bitter lesson TypeSafe argues with, and the Je
 
 ## 🔗 Related Lists
 
-Project directories for Jev, and the two sibling lists.
+The two sibling lists.
 
-- [awesome-jev (hellogumbo)](https://github.com/hellogumbo/awesome-jev), 409-entry directory of projects built on Jev, with a searchable site. [![List](https://img.shields.io/github/stars/hellogumbo/awesome-jev?style=flat-square&logo=github&label=List&color=181717)](https://github.com/hellogumbo/awesome-jev)
-- [awesome-typesafe](https://github.com/AbdelStark/awesome-typesafe), Official resources and community projects for TypeSafe, with limitation notes per entry. [![List](https://img.shields.io/github/stars/AbdelStark/awesome-typesafe?style=flat-square&logo=github&label=List&color=181717)](https://github.com/AbdelStark/awesome-typesafe)
-- [awesome-jev (yibie)](https://github.com/yibie/awesome-jev), Production use cases grouped by decision pattern, with an explicit inclusion test. [![List](https://img.shields.io/github/stars/yibie/awesome-jev?style=flat-square&logo=github&label=List&color=181717)](https://github.com/yibie/awesome-jev)
-- [awesome-jev (AnotiaWang)](https://github.com/AnotiaWang/awesome-jev), Bilingual English and Chinese list of Jev applications, SDKs and demos. [![List](https://img.shields.io/github/stars/AnotiaWang/awesome-jev?style=flat-square&logo=github&label=List&color=181717)](https://github.com/AnotiaWang/awesome-jev)
 - [Awesome AI Scientist](https://github.com/Omni-Scientist/Awesome-AI-Scientist), Sibling list, AI systems that do science. [![List](https://img.shields.io/github/stars/Omni-Scientist/Awesome-AI-Scientist?style=flat-square&logo=github&label=List&color=181717)](https://github.com/Omni-Scientist/Awesome-AI-Scientist)
 - [Awesome RSI](https://github.com/Omni-Scientist/Awesome-RSI), Sibling list, systems whose improvement loop modifies itself. [![List](https://img.shields.io/github/stars/Omni-Scientist/Awesome-RSI?style=flat-square&logo=github&label=List&color=181717)](https://github.com/Omni-Scientist/Awesome-RSI)
 

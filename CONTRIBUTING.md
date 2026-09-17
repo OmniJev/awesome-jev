@@ -14,7 +14,7 @@ Jev is new and the literature about it is thin, so the list is sized to the evid
 
 Say in your pull request which test the entry passes, in one line. Work that is merely adjacent (general LLM calibration, general routing, general safety) stays out, however good it is.
 
-Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope here; the directories in Related Lists collect them.
+Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope here.
 
 ## Before opening a pull request
 
