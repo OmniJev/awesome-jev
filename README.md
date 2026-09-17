@@ -26,7 +26,6 @@
 
 ## Contents
 
-- [✅ What Gets In](#-what-gets-in)
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (19)
 - [🔓 Open Reproductions](#-open-reproductions) (17)
@@ -36,18 +35,6 @@
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
 - [🧠 Where the Name Comes From](#-where-the-name-comes-from) (5)
 - [🔗 Related Lists](#-related-lists) (6)
-
----
-
-## ✅ What Gets In
-
-Jev shipped on 15 September 2026 and little has been written about it, so this list stays small. An entry has to pass one of three tests.
-
-- **Primary.** By TypeSafe, or a direct reproduction or evaluation of Jev.
-- **Named.** Named by TypeSafe's own materials, or by the launch discussion, as what Jev is or what Jev replaces.
-- **Same shape.** The answer set is fixed before inference, the model returns a probability per option, and no free text is generated.
-
-The lineage at the end is capped at thirty entries for the same reason.
 
 ---
 
