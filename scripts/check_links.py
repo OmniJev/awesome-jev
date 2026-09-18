@@ -38,18 +38,22 @@ def normalize(url):
     return url
 
 
-# huggingface.co rate-limits bursts with HTTP 429; serialize and pace those.
-_HF_LOCK = threading.Lock()
-_HF_DELAY = 2.0
+# These hosts answer 200 to a single request and 429 to a burst. Give each one
+# its own lock so requests to it are paced and serialized, while other hosts
+# keep running in parallel.
+THROTTLED = ("huggingface.co", "news.ycombinator.com")
+_LOCKS = {h: threading.Lock() for h in THROTTLED}
+_DELAY = 2.0
 _RETRY_429 = 3
 
 
 def probe(url):
     clean = normalize(url.rstrip('.,;:'))
-    if "huggingface.co" in clean:
-        with _HF_LOCK:
+    host = next((h for h in THROTTLED if h in clean), None)
+    if host:
+        with _LOCKS[host]:
             for attempt in range(_RETRY_429):
-                time.sleep(_HF_DELAY * (attempt + 1))
+                time.sleep(_DELAY * (attempt + 1))
                 result = _probe(clean)
                 if result[1] != 429:
                     return result
