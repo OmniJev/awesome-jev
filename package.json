@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "lint": "node scripts/lint.mjs README.md",
+    "counts": "node scripts/check_counts.mjs README.md",
     "links": "python3 scripts/check_links.py README.md"
   },
   "devDependencies": {

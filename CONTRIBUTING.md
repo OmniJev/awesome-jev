@@ -55,7 +55,7 @@ Where the paper is titled `Name: Something`, drop the `Name:` prefix, since the 
 - [Jevlike](https://github.com/vinnylarouge/jevlike), From-scratch model with Jev's exact shape: text plus N options in, one probability per option out. [badges]
 ~~~
 
-The separator is a comma. A leading ⭐ marks the handful of entries a newcomer should read first; use it sparingly.
+The separator is a comma.
 
 ### Badge conventions
 
@@ -76,8 +76,13 @@ Omit a badge rather than pointing it at a mirror. Do not add a stars badge when 
 ~~~bash
 npm install
 npm run lint     # structure, dead links, duplicate links, table of contents
+npm run counts   # the badge, contents and News numbers match the entries
 npm run links    # every URL resolves
 ~~~
+
+Adding an entry changes the numbers in the header badges, the table of contents
+and the News paragraph. `npm run counts` prints each one with the value the
+README's own contents imply, so set them to what it shows.
 
 `npm run lint` runs awesome-lint's rule set with the list-item rule switched off, since this list follows the paper-list convention (a comma, then the quoted title) rather than the dash-and-description convention.
 
@@ -87,7 +92,29 @@ npm run links    # every URL resolves
 - [ ] The paper or primary page is linked, and the arXiv id in the badge matches it.
 - [ ] Official code or model links are included when they exist.
 - [ ] The description is one clause, concrete, and at the level the source supports.
-- [ ] `python3 scripts/check_links.py README.md` passes.
+- [ ] `npm run counts` and `python3 scripts/check_links.py README.md` pass.
 - [ ] Section placement is right and the entry is not duplicated elsewhere.
+
+## Commit authorship
+
+Commit under your own name and an email tied to your GitHub account, so the
+contributors list credits you.
+
+An AI coding tool may have written the patch, and that is fine. What the check
+rejects is a commit whose author or committer **resolves to one of those tools'
+GitHub accounts**, `@claude`, `@codex`, `@cursoragent` and the like, because
+GitHub would then list the tool among this repository's contributors and
+clearing it later means rewriting history. A `Co-Authored-By` trailer is not
+affected; it never reaches that list.
+
+If the check catches a commit, reset the author and force push the branch:
+
+~~~bash
+git commit --amend --author="Your Name <you@example.com>"
+git push --force-with-lease
+~~~
+
+Being named Claude is not a problem. The check reads the GitHub account behind
+the commit, not the name on it.
 
 By contributing, you agree that your contribution can be distributed under the repository's [CC BY 4.0 license](LICENSE).
