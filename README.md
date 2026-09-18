@@ -10,7 +10,7 @@
 
 ![Entries](https://img.shields.io/badge/entries-89-1B2A6B?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open reproductions](https://img.shields.io/badge/open%20reproductions-17-8B5CF6?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-17-8B5CF6?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evaluations](https://img.shields.io/badge/independent%20Jev%20evals-16-F0545C?style=flat-square&logo=speedtest&logoColor=white)
 ![With code](https://img.shields.io/badge/with%20code-45-181717?style=flat-square&logo=github&logoColor=white)
 ![Stars](https://img.shields.io/badge/repo%20stars-232k-F59E0B?style=flat-square&logo=starship&logoColor=white)
@@ -18,7 +18,7 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-2EA44F?style=flat-square&logo=git&logoColor=white)](#contributing)
 
-⚡ System One & Jev · 🔓 Reproductions · 📊 Evaluations · 📰 Commentary · 🧬 Lineage
+⚡ System One & Jev · 🧪 Open Source · 📊 Evaluations · 📰 Commentary · 🧬 Lineage
 
 </div>
 
@@ -28,7 +28,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (19)
-- [🔓 Open Reproductions](#-open-reproductions) (17)
+- [🧪 Open Source](#-open-source) (17)
 - [📊 Independent Evaluations](#-independent-evaluations) (17)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -42,7 +42,7 @@
 
 🚀 **2026-09 · Repository launch.** 89 entries in 7 sections. PRs welcome.
 
-🔓 **2026-09 · Open reproductions and evaluations.** 17 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 17 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -72,7 +72,7 @@ What TypeSafe has published: the launch post, the docs, the SDKs, the essays, an
 
 ---
 
-## 🔓 Open Reproductions
+## 🧪 Open Source
 
 Open weights and code that rebuild the System One shape from encoders, small decoders and constrained decoding.
 

@@ -28,7 +28,7 @@ Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope he
 | Section | What belongs there |
 |:--|:--|
 | ⚡ System One & Jev | TypeSafe's own pages, SDKs, essays and the launch discussion |
-| 🔓 Open Reproductions | open weights or code that rebuild the System One shape |
+| 🧪 Open Source | open weights or code that rebuild the System One shape |
 | 📊 Independent Evaluations | any published test of Jev, with its headline number |
 | 📰 Commentary & Analysis | reporting and analysis that checks the claims against the evidence |
 | 🧬 The Shape Before Jev | earlier work with the same input and output shape |
