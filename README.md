@@ -8,10 +8,10 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
-![Entries](https://img.shields.io/badge/entries-88-1B2A6B?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-89-1B2A6B?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open reproductions](https://img.shields.io/badge/open%20reproductions-17-8B5CF6?style=flat-square&logo=huggingface&logoColor=white)
-![Jev evaluations](https://img.shields.io/badge/independent%20Jev%20evals-15-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![Jev evaluations](https://img.shields.io/badge/independent%20Jev%20evals-16-F0545C?style=flat-square&logo=speedtest&logoColor=white)
 ![With code](https://img.shields.io/badge/with%20code-45-181717?style=flat-square&logo=github&logoColor=white)
 ![Stars](https://img.shields.io/badge/repo%20stars-232k-F59E0B?style=flat-square&logo=starship&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
@@ -29,7 +29,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (19)
 - [🔓 Open Reproductions](#-open-reproductions) (17)
-- [📊 Independent Evaluations](#-independent-evaluations) (16)
+- [📊 Independent Evaluations](#-independent-evaluations) (17)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -40,9 +40,9 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 88 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 89 entries in 7 sections. PRs welcome.
 
-🔓 **2026-09 · Open reproductions and evaluations.** 17 open models and codebases rebuild the System One shape, and 15 independent evaluations of Jev are collected under Independent Evaluations.
+🔓 **2026-09 · Open reproductions and evaluations.** 17 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -116,7 +116,7 @@ Every independent test of Jev published so far, with the headline number where t
 - [Near Here event validation](https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation), 50-case event validation: Jev 96% at 0.59s and $0.043 per 1,000, Mistral small 4 84%, Gemini Flash-Lite 86%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://nearhere.events/blog/typesafe-jev-mistral-gemini-event-validation)
 - [Every: Mini-Vibe Check](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds), 777 judgments over 37 articles in 0.7s for a quarter of a cent; caught six of seven planted defects, Fable seven. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds)
 - [Jev is the fish at the poker table](https://backnotprop.com/blog/jev-poker/), Poker probe finding 15 to 30 point swings from relabelling the same hand, and 16 of 16 bets against a made flush. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://backnotprop.com/blog/jev-poker/)
-- [Jev judge call vs dimension scores](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/), One direct Jev question per row against 12–14 Jev-scored dimensions with locally fitted weights on three classification tasks: 0.9076 against 0.8373 on Japanese NLI, but about 25× more hard benign rows flagged as attacks, 37.2% against 1.5%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/)
+- [Jev judge call vs dimension scores](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/), One direct Jev question per row against 12 to 14 Jev-scored dimensions with fitted weights on three tasks: 0.9076 vs 0.8373 on Japanese NLI, but 25x the hard-benign false positives, 37.2% vs 1.5%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/)
 
 ---
 
