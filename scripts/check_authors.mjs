@@ -25,7 +25,7 @@
 // Without network access the script falls back to reading names and addresses,
 // which is a guess, so offline hits are warnings.
 //
-//   node scripts/check_authors.mjs --pr 2 --repo OmniJev/awesome-jev
+//   node scripts/check_authors.mjs --pr 2 --repo OmniJev/awesome-jev   (token optional)
 //   node scripts/check_authors.mjs origin/main..HEAD
 
 import {execFileSync} from 'node:child_process';
@@ -79,12 +79,13 @@ function suspect(name, email) {
 }
 
 async function checkPullRequest(repo, number) {
+	// A token is optional. Actions supplies one, and on a public repository the
+	// anonymous limit of 60 requests an hour is plenty for reviewing a PR by hand.
 	const token = process.env.GITHUB_TOKEN ?? process.env.GH_TOKEN;
-	if (!token) throw new Error('set GITHUB_TOKEN to use --pr');
+	const headers = {accept: 'application/vnd.github+json'};
+	if (token) headers.authorization = `Bearer ${token}`;
 	const url = `https://api.github.com/repos/${repo}/pulls/${number}/commits?per_page=100`;
-	const response = await fetch(url, {
-		headers: {authorization: `Bearer ${token}`, accept: 'application/vnd.github+json'},
-	});
+	const response = await fetch(url, {headers});
 	if (!response.ok) throw new Error(`GitHub API ${response.status} for ${url}`);
 	const commits = await response.json();
 
