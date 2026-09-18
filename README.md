@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
-![Entries](https://img.shields.io/badge/entries-89-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-90-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-17-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-18-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-16-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-45-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-46-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -38,9 +38,9 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 89 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 90 entries in 7 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 17 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 18 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -83,8 +83,8 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [Jev on a laptop](https://github.com/rorshopping/jev-on-a-laptop), Unofficial study of Jev-style parallel typed decisions on stock 1.5B to 8B models on Apple Silicon, with benchmarks. [![Code](https://img.shields.io/github/stars/rorshopping/jev-on-a-laptop?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/rorshopping/jev-on-a-laptop) [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/rorshopping/parallel-constrained-decisions)
 - [jevbetter](https://github.com/olanotolu/jevbetter), One-pass scorer over a variable option list: hashed n-gram encoder, rival-aware attention, gated head, temperature scaling. [![Code](https://img.shields.io/github/stars/olanotolu/jevbetter?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/olanotolu/jevbetter)
 - [decider](https://github.com/Mapika/decider), Qwen3.5-2B fine-tune that emits typed decisions with calibrated probabilities in one pass. [![Code](https://img.shields.io/github/stars/Mapika/decider?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Mapika/decider)
+- [LitJev](https://github.com/zhengxuyu/litjev), Jev's decision layer on off-the-shelf Qwen checkpoints: one shared prefill, then option logits read per question, no training. [![Code](https://img.shields.io/github/stars/zhengxuyu/litjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhengxuyu/litjev)
 - [openjev (zhihz)](https://github.com/zhihz/openjev), Local bilingual probability decisions from context, questions and candidate answers. [![Code](https://img.shields.io/github/stars/zhihz/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhihz/openjev)
-- [LitJev](https://github.com/zhengxuyu/litjev), A reproduction of Jev that turns any Qwen model into a fast decision model, serving the same /v1/systemone schema (Choice, Score, Noul) with no training and no generated answer text. [![Code](https://img.shields.io/github/stars/zhengxuyu/litjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhengxuyu/litjev)
 - [rlcd-modernbert-151m](https://github.com/Heman10x-NGU/Verdict-open-jev), Encoder-side reproduction: GLiClass ModernBERT base retrained for calibrated label probabilities. [![Code](https://img.shields.io/github/stars/Heman10x-NGU/Verdict-open-jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Heman10x-NGU/Verdict-open-jev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/heman10x/rlcd-modernbert-151m)
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd), Choice, Score and Noul on Qwen3.5-0.8B, the smallest decoder-based reproduction. [![Code](https://img.shields.io/github/stars/shamazharikh/qwen-rlcd?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shamazharikh/qwen-rlcd)
 - [Parallel Constrained Decision Engine](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding), Live demo of the Qwen-2.5-1B-RLCD approach: KV-cache broadcast, logit slicing per candidate, 100 percent schema validity. [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding)
