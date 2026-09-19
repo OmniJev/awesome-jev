@@ -8,9 +8,9 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
-![Entries](https://img.shields.io/badge/entries-90-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-91-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-18-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-19-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-16-F0545C?style=flat-square&logo=speedtest&logoColor=white)
 ![With code](https://img.shields.io/badge/with%20code-46-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (19)
-- [🧪 Open Source](#-open-source) (18)
+- [🧪 Open Source](#-open-source) (19)
 - [📊 Independent Evaluations](#-independent-evaluations) (17)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -38,9 +38,9 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 90 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 91 entries in 7 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 18 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 19 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -92,6 +92,7 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [LFM2.5-350M-RLCD](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD), 350M-parameter RLCD-style decision model, the smallest open attempt. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD)
 - [system-one-qwen3.5-4b-scorer](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer), Qwen3.5-4B base trained as a Score-style rubric rater. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer)
 - [system-one-mini](https://huggingface.co/DavidHatley/system-one-mini), DistilBERT-sized System One shape, a floor for how small the idea can go. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/DavidHatley/system-one-mini)
+- [Laya](https://huggingface.co/convaiinnovations/laya), Apache-2.0 System One clone: ModernBERT-large with RLCD-trained decision heads (TD(λ) trajectory modeling, proper-scoring-rule reward) returning Choice, Score and Noul in one 38 ms pass, self-hosted. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/convaiinnovations/laya) [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/convaiinnovations/laya-demo)
 
 ---
 
