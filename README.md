@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
-![Entries](https://img.shields.io/badge/entries-92-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-81-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-20-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-16-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-47-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-45-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -25,7 +25,7 @@
 ## Contents
 
 - [🔥 News](#-news)
-- [⚡ System One & Jev](#-system-one--jev) (19)
+- [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (20)
 - [📊 Independent Evaluations](#-independent-evaluations) (17)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
@@ -38,7 +38,7 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 92 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 81 entries in 7 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 20 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
 
@@ -46,27 +46,16 @@
 
 ## ⚡ System One & Jev
 
-What TypeSafe has published: the launch post, the docs, the SDKs, the essays, and the failure modes it admits to.
+What TypeSafe has published, kept to the load-bearing pages: the launch post, the contract, the failure modes it admits to, and the code it ships.
 
 - [Introducing System One Models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), The launch post: state in, typed probabilistic decisions out, RLCD training, 70 to 500 ms, $0.042 per MTok. [![TypeSafe](https://img.shields.io/badge/TypeSafe-blog-7C5CE6?style=flat-square&logo=rss&logoColor=white)](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
 - [Primitives: Choice, Score, Noul](https://docs.typesafe.ai/primitives), The three typed question shapes and the probability-per-option answers they return. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/primitives)
 - [Jev 1.13 jaggedness](https://docs.typesafe.ai/model-jaggedness/jev-1.13), TypeSafe's documented failure modes: literal reading, counting, dates, indirection, distractor state, adversarial content. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/model-jaggedness/jev-1.13)
 - [System One Adapter](https://github.com/typesafe-ai/system-one-adapter-python), Official drop-in that serves the same typed interface from OpenAI or Anthropic models, the baseline for every comparison. [![Code](https://img.shields.io/github/stars/typesafe-ai/system-one-adapter-python?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafe-ai/system-one-adapter-python)
 - [Hacker News launch thread](https://news.ycombinator.com/item?id=49717558), 1,850 points and 485 comments; the CEO confirms the zero-shot classifier reading and the encoder-with-heads shape. [![Hacker News](https://img.shields.io/badge/Hacker_News-thread-FF6600?style=flat-square&logo=ycombinator&logoColor=white)](https://news.ycombinator.com/item?id=49717558)
-- [System One (concept)](https://docs.typesafe.ai/concepts/system-one), Defines the model class: fast structured decisions for software, contrasted with text-generating LLMs. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/concepts/system-one)
-- [Confidence](https://docs.typesafe.ai/confidence), Confidence as a statistic of the returned distribution, and the act, confirm or escalate thresholds built on it. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/confidence)
-- [AI primer: why calibrated decisions](https://docs.typesafe.ai/introduction/machine-learning-primer), TypeSafe's own account of RLCD as a third post-training regime beside RLHF and RLVR. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/introduction/machine-learning-primer)
-- [Patterns](https://docs.typesafe.ai/patterns), Speculative fan-out, confidence-gated routing, composite scoring and intent routing as architectural patterns. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/patterns)
-- [HTTP API reference](https://docs.typesafe.ai/api), The request and response contract for POST /v1/systemone. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/api)
-- [Cookbooks](https://docs.typesafe.ai/cookbooks/parallel_questions), Reproducible recipes for parallel questions, reranking, guardrails, extraction and hierarchical classification. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://docs.typesafe.ai/cookbooks/parallel_questions)
-- [TypeSafe Python SDK](https://github.com/typesafe-ai/typesafe-sdk-python), Official synchronous and asynchronous Python client. [![Code](https://img.shields.io/github/stars/typesafe-ai/typesafe-sdk-python?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafe-ai/typesafe-sdk-python) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://docs.typesafe.ai/sdk/python)
-- [TypeSafe JavaScript SDK](https://github.com/typesafe-ai/typesafe-sdk-js), Official TypeScript client with answer types inferred from the questions. [![Code](https://img.shields.io/github/stars/typesafe-ai/typesafe-sdk-js?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafe-ai/typesafe-sdk-js)
 - [TypeSafe Agent Skills](https://github.com/typesafe-ai/skills), Skill files that teach Claude Code, Codex and similar agents to design System One workflows. [![Code](https://img.shields.io/github/stars/typesafe-ai/skills?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafe-ai/skills) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://docs.typesafe.ai/agent-skill)
 - [Jev on Vercel AI SDK](https://ai-sdk.dev/providers/ai-sdk-providers/typesafe-ai), The first third-party surface: Jev-latest as an evaluation model behind experimental_evaluate, no waitlist. [![Vercel](https://img.shields.io/badge/Vercel-AI_SDK-000000?style=flat-square&logo=vercel&logoColor=white)](https://ai-sdk.dev/providers/ai-sdk-providers/typesafe-ai)
-- [Manifesto](https://typesafe.ai/manifesto), Machine-native composable AI as reliable primitives for programmers, against the assistant framing. [![TypeSafe](https://img.shields.io/badge/TypeSafe-blog-7C5CE6?style=flat-square&logo=rss&logoColor=white)](https://typesafe.ai/manifesto)
-- [Lies, Damned Lies, and Benchmarks](https://typesafe.ai/blog/antibenchmaxxing), Why TypeSafe publishes dated, retired eval snapshots instead of a benchmark table. [![TypeSafe](https://img.shields.io/badge/TypeSafe-blog-7C5CE6?style=flat-square&logo=rss&logoColor=white)](https://typesafe.ai/blog/antibenchmaxxing)
 - [Founder launch thread on X](https://x.com/CompleteSkeptic/status/2099925682726002904), Diogo Almeida's thread arguing RLCD decision models reach economic value before chat models do. [![X](https://img.shields.io/badge/X-thread-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/CompleteSkeptic/status/2099925682726002904)
-- [The Bitterest Lesson](https://typesafe.ai/blog/bitterest-lesson), TypeSafe's own essay ranking task choice above data, compute and algorithms, the argument behind System One Models. [![TypeSafe](https://img.shields.io/badge/TypeSafe-blog-7C5CE6?style=flat-square&logo=rss&logoColor=white)](https://typesafe.ai/blog/bitterest-lesson)
 
 ---
 
@@ -74,8 +63,9 @@ What TypeSafe has published: the launch post, the docs, the SDKs, the essays, an
 
 Open weights and code that rebuild the System One shape from encoders, small decoders and constrained decoding.
 
-- [OpenJev](https://github.com/TheoLeeCJ/openjev), Can something like Jev run on a 3090 at home; open baseline for direct typed option scoring. [![Code](https://img.shields.io/github/stars/TheoLeeCJ/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/TheoLeeCJ/openjev) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://openjev.com)
+- [SemIf](https://github.com/TheoLeeCJ/SemIf), Semantic ifs from open models on a 3090 at home; open baseline for direct typed option scoring, renamed from openjev. [![Code](https://img.shields.io/github/stars/TheoLeeCJ/SemIf?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/TheoLeeCJ/SemIf) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://openjev.com)
 - [Jevlike](https://github.com/vinnylarouge/jevlike), From-scratch model with Jev's exact shape: text plus N options in, one probability per option out, option-attention head, Doom and chess demos. [![Code](https://img.shields.io/github/stars/vinnylarouge/jevlike?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/vinnylarouge/jevlike)
+- [PlayJev](https://github.com/OmniJev/PlayJev), Qwen3.5-0.8B-Base fine-tuned to play ten browser games from raw pixels, one frame in, one typed move out. [![Code](https://img.shields.io/github/stars/OmniJev/PlayJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OmniJev/PlayJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/OmniJev/PlayJev-0.8B) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://omnijev.github.io/PlayJev/)
 - [Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD), Qwen2.5-1.5B fine-tune plus parallel constrained decoding; all schema fields scored in one broadcast prefill, 5.6x to 7x faster on Apple Silicon. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang), Jev-compatible API endpoint served from open models with prefill-only inference. [![Code](https://img.shields.io/github/stars/ekzhang/openjev-sglang?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/ekzhang/openjev-sglang)
 - [dspy-typesafeify](https://github.com/typesafeainate/dspy-typesafeify), Decorator that routes DSPy typed Signatures to Jev where the signature is a pure decision. [![Code](https://img.shields.io/github/stars/typesafeainate/dspy-typesafeify?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafeainate/dspy-typesafeify)
@@ -86,7 +76,6 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [jevbetter](https://github.com/olanotolu/jevbetter), One-pass scorer over a variable option list: hashed n-gram encoder, rival-aware attention, gated head, temperature scaling. [![Code](https://img.shields.io/github/stars/olanotolu/jevbetter?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/olanotolu/jevbetter)
 - [rlcd-modernbert-151m](https://github.com/Heman10x-NGU/Verdict-open-jev), Encoder-side reproduction: GLiClass ModernBERT base retrained for calibrated label probabilities. [![Code](https://img.shields.io/github/stars/Heman10x-NGU/Verdict-open-jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Heman10x-NGU/Verdict-open-jev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/heman10x/rlcd-modernbert-151m)
 - [openjev (zhihz)](https://github.com/zhihz/openjev), Local bilingual probability decisions from context, questions and candidate answers. [![Code](https://img.shields.io/github/stars/zhihz/openjev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/zhihz/openjev)
-- [PlayJev](https://github.com/OmniJev/PlayJev), Qwen3.5-0.8B-Base fine-tuned to play ten browser games from raw pixels, one frame in, one typed move out. [![Code](https://img.shields.io/github/stars/OmniJev/PlayJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OmniJev/PlayJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/OmniJev/PlayJev-0.8B) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://omnijev.github.io/PlayJev/)
 - [qwen-rlcd](https://github.com/shamazharikh/qwen-rlcd), Choice, Score and Noul on Qwen3.5-0.8B, the smallest decoder-based reproduction. [![Code](https://img.shields.io/github/stars/shamazharikh/qwen-rlcd?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shamazharikh/qwen-rlcd)
 - [Laya](https://huggingface.co/convaiinnovations/laya), ModernBERT-large with RLCD-trained decision heads: Choice, Score and Noul in one 38 ms pass. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/convaiinnovations/laya) [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/convaiinnovations/laya-demo)
 - [Parallel Constrained Decision Engine](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding), Live demo of the Qwen-2.5-1B-RLCD approach: KV-cache broadcast, logit slicing per candidate, 100 percent schema validity. [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/drinkmoonshine/parallel-constrained-decoding)
