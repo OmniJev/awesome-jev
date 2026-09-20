@@ -4,3 +4,6 @@ __pycache__/
 # harvest, caches and the rendered site are build artefacts; the site lives on gh-pages
 .build/
 docs/
+# the rendered gallery and its star cache are produced by site/build.py
+site/dist/
+site/stars.json

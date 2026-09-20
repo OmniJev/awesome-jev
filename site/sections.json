@@ -1,0 +1,92 @@
+[
+ {
+  "key": "systemone",
+  "label": "System One & Jev",
+  "chip": "System One & Jev",
+  "short": "Jev",
+  "hue": [
+   "#2F80ED",
+   "#6FA8FF"
+  ]
+ },
+ {
+  "key": "reproductions",
+  "label": "Open Source",
+  "chip": "Open Source",
+  "short": "Open Source",
+  "hue": [
+   "#7C5CE6",
+   "#A78BFA"
+  ]
+ },
+ {
+  "key": "builtwith",
+  "label": "Built with Jev",
+  "chip": "Built with Jev",
+  "short": "Built with Jev",
+  "hue": [
+   "#BE2D6E",
+   "#F472B6"
+  ]
+ },
+ {
+  "key": "evaluations",
+  "label": "Independent Evaluations",
+  "chip": "Evaluations",
+  "short": "Evaluations",
+  "hue": [
+   "#F0545C",
+   "#FF7B85"
+  ]
+ },
+ {
+  "key": "commentary",
+  "label": "Commentary & Analysis",
+  "chip": "Commentary",
+  "short": "Commentary",
+  "hue": [
+   "#12866B",
+   "#4FC0A3"
+  ]
+ },
+ {
+  "key": "shape",
+  "label": "The Shape Before Jev",
+  "chip": "The Shape Before Jev",
+  "short": "Shape",
+  "hue": [
+   "#22A55B",
+   "#4FD08A"
+  ]
+ },
+ {
+  "key": "incumbents",
+  "label": "What Jev Is Sold Against",
+  "chip": "Sold Against",
+  "short": "Sold Against",
+  "hue": [
+   "#D98A0B",
+   "#FBBF4D"
+  ]
+ },
+ {
+  "key": "name",
+  "label": "Where the Name Comes From",
+  "chip": "The Name",
+  "short": "Name",
+  "hue": [
+   "#1B2A6B",
+   "#9DB4FF"
+  ]
+ },
+ {
+  "key": "lists",
+  "label": "Related Lists",
+  "chip": "Related",
+  "short": "Related",
+  "hue": [
+   "#64748B",
+   "#94A3B8"
+  ]
+ }
+]
