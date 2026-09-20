@@ -8,7 +8,7 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
-![Entries](https://img.shields.io/badge/entries-82-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-83-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-20-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-17-F0545C?style=flat-square&logo=speedtest&logoColor=white)
@@ -28,7 +28,7 @@
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (20)
 - [📊 Independent Evaluations](#-independent-evaluations) (18)
-- [📰 Commentary & Analysis](#-commentary--analysis) (7)
+- [📰 Commentary & Analysis](#-commentary--analysis) (8)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
 - [🧠 Where the Name Comes From](#-where-the-name-comes-from) (5)
@@ -38,7 +38,7 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 82 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 83 entries in 7 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 20 open models and codebases rebuild the System One shape, and 17 independent evaluations of Jev are collected under Independent Evaluations.
 
@@ -95,6 +95,7 @@ Every independent test of Jev published so far, with the headline number where t
 - [jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench), Jev as reranker over 8 datasets and 1,617 questions: nDCG@10 0.692 versus Cohere Rerank 4 Pro 0.691, at 422ms. [![Code](https://img.shields.io/github/stars/anessbelbati/jev-rerank-bench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/anessbelbati/jev-rerank-bench) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://anessbelbati.com/lab/jev-reranking/)
 - [TypeSafe Jev evals dashboard](https://evals.typesafe.ai/), TypeSafe's own four-workflow dashboard, Jev at 61.7 to 76.0% accuracy and 0.3 to 0.5s per case against frontier baselines. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://evals.typesafe.ai/) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://evals.typesafe.ai/)
 - [jev-eval-agent](https://github.com/vinilana/jev-eval-agent), Jev routes 100 mocked tools behind a confidence gate, measuring steps, tool calls, tokens and cost against the LLM choosing directly. [![Code](https://img.shields.io/github/stars/vinilana/jev-eval-agent?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/vinilana/jev-eval-agent)
+- [jev-use benchmarks](https://github.com/shitianfang/jev-use/blob/main/bench/RESULTS.md), 454 judgments against a Claude Opus 5 reference: 82.2% agreement, 89.5% among non-escalated verdicts, over a 68.7% majority baseline; context compaction 56.3%, below a constant answerer. [![Code](https://img.shields.io/github/stars/shitianfang/jev-use?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shitianfang/jev-use)
 - [LegalForecastBench](https://github.com/johnhughes3/LegalForecastBench), Claim-level Brier scoring of federal motion-to-dismiss outcomes, a fixed binary with one probability per unit; no Jev row published yet. [![Code](https://img.shields.io/github/stars/johnhughes3/LegalForecastBench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/johnhughes3/LegalForecastBench)
 - [jev-benchmark (chess and NPC addressee)](https://github.com/wondertwins/jev-benchmark), Jev no better than random picking chess moves from a FEN, but F1 0.96 on NPC addressee detection, 0.2s median. [![Code](https://img.shields.io/github/stars/wondertwins/jev-benchmark?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/wondertwins/jev-benchmark)
 - [jev-research-eval](https://github.com/jgridifier/jev-research-eval), Reproducible harness scoring Jev ultrafast research-browser runs over 11 baseline cases plus 18 human and quant stress cases with QC grades. [![Code](https://img.shields.io/github/stars/jgridifier/jev-research-eval?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/jgridifier/jev-research-eval)
@@ -107,7 +108,6 @@ Every independent test of Jev published so far, with the headline number where t
 - [Every: Mini-Vibe Check](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds), 777 judgments over 37 articles in 0.7s for a quarter of a cent; caught six of seven planted defects, Fable seven. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds)
 - [Jev is the fish at the poker table](https://backnotprop.com/blog/jev-poker/), Poker probe finding 15 to 30 point swings from relabelling the same hand, and 16 of 16 bets against a made flush. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://backnotprop.com/blog/jev-poker/)
 - [Jev judge call vs dimension scores](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/), One direct Jev question per row against 12 to 14 Jev-scored dimensions with fitted weights on three tasks: 0.9076 vs 0.8373 on Japanese NLI, but 25x the hard-benign false positives, 37.2% vs 1.5%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/)
-- [jev-use benchmarks](https://github.com/shitianfang/jev-use/blob/main/bench/RESULTS.md), 454 real judgments: 82.2% agreement with a claude-opus-5 reference, 89.5% among non-escalated verdicts, against a 68.7% majority-class baseline; context compaction scored 56.3%, below a constant answerer, and with enum-constrained baselines Jev's latency lead is 3x rather than the 14x an unconfigured comparison shows. [![Code](https://img.shields.io/github/stars/shitianfang/jev-use?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shitianfang/jev-use)
 
 ---
 
@@ -119,9 +119,9 @@ Reporting and technical commentary that checks the launch claims against the evi
 - [Agentpedia claim-vs-evidence guide](https://agentpedia.codes/blog/jev-system-one-models), Claim-by-claim audit separating verified Jev pricing and latency from unproven calibration; puts aggregate accuracy at 67.8% versus Opus 5's 73.1%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentpedia.codes/blog/jev-system-one-models)
 - [The Register: TypeSafe AI debuts model for machines](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711), Press account of the $40M raise, the Doom demo and the caveat that structured output is a different error type, not correctness. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.theregister.com/ai-and-ml/2026/09/16/typesafe-ai-debuts-model-for-machines-that-plays-doom/5296711)
 - [Jev vs auto-regressive LLMs vs MDLM](https://lilting.ch/en/articles/typesafe-ai-jev-system-one-model), Technical comparison of Jev's single-pass sampler with token-by-token decoding and masked diffusion. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://lilting.ch/en/articles/typesafe-ai-jev-system-one-model)
-- [MrJev: what each Jev tool sends, and where](https://mrjev.com/best-jev-tools/), Hands-on reviews of 38 community projects run in a container with a real key, each recording the data that leaves your machine; found unredacted credentials in two tools, fixed upstream. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://mrjev.com/best-jev-tools/)
 - [Chat models were never the point](https://nomanualbook.substack.com/p/chat-models-were-never-the-point), Essay on Jev as the model that refuses to write sentences and what that implies for product design. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://nomanualbook.substack.com/p/chat-models-were-never-the-point)
 - [How does Jev work? RLCD and parallel inference](https://www.explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026), Explainer reconstructing the RLCD objective and the parallel sampler from public statements. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.explainx.ai/blog/how-does-jev-work-rlcd-system-one-model-explained-2026)
+- [MrJev: what each Jev tool sends, and where](https://mrjev.com/best-jev-tools/), Hands-on reviews of 72 community projects, 66 run in a container with a real key to record what leaves your machine; a password in a database URL and world-readable prompt logs, fixed upstream. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://mrjev.com/best-jev-tools/)
 - [Typed Decisions, Not Chat](https://warmersun.com/jev/), Secondary analysis of TypeSafe's dashboard putting Jev at about 67.8% mean agreement against 74.1% for the best comparator. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://warmersun.com/jev/)
 
 ---
