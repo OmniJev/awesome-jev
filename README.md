@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
 
-![Entries](https://img.shields.io/badge/entries-81-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-82-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-20-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
-![Jev evals](https://img.shields.io/badge/Jev%20evals-16-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-45-181717?style=flat-square&logo=github&logoColor=white)
+![Jev evals](https://img.shields.io/badge/Jev%20evals-17-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-46-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (20)
-- [📊 Independent Evaluations](#-independent-evaluations) (17)
+- [📊 Independent Evaluations](#-independent-evaluations) (18)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -38,9 +38,9 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 81 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 82 entries in 7 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 20 open models and codebases rebuild the System One shape, and 16 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 20 open models and codebases rebuild the System One shape, and 17 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -107,6 +107,7 @@ Every independent test of Jev published so far, with the headline number where t
 - [Every: Mini-Vibe Check](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds), 777 judgments over 37 articles in 0.7s for a quarter of a cent; caught six of seven planted defects, Fable seven. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds)
 - [Jev is the fish at the poker table](https://backnotprop.com/blog/jev-poker/), Poker probe finding 15 to 30 point swings from relabelling the same hand, and 16 of 16 bets against a made flush. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://backnotprop.com/blog/jev-poker/)
 - [Jev judge call vs dimension scores](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/), One direct Jev question per row against 12 to 14 Jev-scored dimensions with fitted weights on three tasks: 0.9076 vs 0.8373 on Japanese NLI, but 25x the hard-benign false positives, 37.2% vs 1.5%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/)
+- [jev-use benchmarks](https://github.com/shitianfang/jev-use/blob/main/bench/RESULTS.md), 454 real judgments: 82.2% agreement with a claude-opus-5 reference, 89.5% among non-escalated verdicts, against a 68.7% majority-class baseline; context compaction scored 56.3%, below a constant answerer, and with enum-constrained baselines Jev's latency lead is 3x rather than the 14x an unconfigured comparison shows. [![Code](https://img.shields.io/github/stars/shitianfang/jev-use?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shitianfang/jev-use)
 
 ---
 
