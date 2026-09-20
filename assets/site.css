@@ -349,16 +349,16 @@ pre.cite {
 /* ---- Awesome JEV palette, lifted from the cover: JEV blue, coral, amber, violet, green ---- */
 :root{
   --teal:#2F80ED; --orange:#F0545C; --gold:#F5A623; --navy:#1B2A6B; --c:var(--teal);
-  --s-systemone:#2F80ED;--s-reproductions:#7C5CE6;--s-evaluations:#F0545C;--s-commentary:#12866B;--s-shape:#22A55B;--s-incumbents:#D98A0B;--s-name:#1B2A6B;--g-jev:#2F80ED;--g-lineage:#22A55B;
+  --s-systemone:#2F80ED;--s-reproductions:#7C5CE6;--s-builtwith:#BE2D6E;--s-evaluations:#F0545C;--s-commentary:#12866B;--s-shape:#22A55B;--s-incumbents:#D98A0B;--s-name:#1B2A6B;--g-jev:#2F80ED;--g-lineage:#22A55B;
 }
 :root[data-theme="dark"]{
   --teal:#6FA8FF; --orange:#FF7B85; --gold:#FBBF4D; --navy:#DCE6FF;
-  --s-systemone:#6FA8FF;--s-reproductions:#A78BFA;--s-evaluations:#FF7B85;--s-commentary:#4FC0A3;--s-shape:#4FD08A;--s-incumbents:#FBBF4D;--s-name:#9DB4FF;--g-jev:#6FA8FF;--g-lineage:#4FD08A;
+  --s-systemone:#6FA8FF;--s-reproductions:#A78BFA;--s-builtwith:#F472B6;--s-evaluations:#FF7B85;--s-commentary:#4FC0A3;--s-shape:#4FD08A;--s-incumbents:#FBBF4D;--s-name:#9DB4FF;--g-jev:#6FA8FF;--g-lineage:#4FD08A;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --teal:#6FA8FF; --orange:#FF7B85; --gold:#FBBF4D; --navy:#DCE6FF;
-    --s-systemone:#6FA8FF;--s-reproductions:#A78BFA;--s-evaluations:#FF7B85;--s-commentary:#4FC0A3;--s-shape:#4FD08A;--s-incumbents:#FBBF4D;--s-name:#9DB4FF;--g-jev:#6FA8FF;--g-lineage:#4FD08A;
+    --s-systemone:#6FA8FF;--s-reproductions:#A78BFA;--s-builtwith:#F472B6;--s-evaluations:#FF7B85;--s-commentary:#4FC0A3;--s-shape:#4FD08A;--s-incumbents:#FBBF4D;--s-name:#9DB4FF;--g-jev:#6FA8FF;--g-lineage:#4FD08A;
   }
 }
 .hero h1{color:var(--navy);}
