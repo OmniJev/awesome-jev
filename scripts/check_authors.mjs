@@ -25,7 +25,7 @@
 // Without network access the script falls back to reading names and addresses,
 // which is a guess, so offline hits are warnings.
 //
-//   node scripts/check_authors.mjs --pr 2 --repo OmniJev/awesome-jev   (token optional)
+//   node scripts/check_authors.mjs --pr 2 --repo OmniJev/awesome-jev-gallery   (token optional)
 //   node scripts/check_authors.mjs origin/main..HEAD
 
 import {execFileSync} from 'node:child_process';

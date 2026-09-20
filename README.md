@@ -6,7 +6,7 @@
 
 > Papers, open models and evaluations behind System One models and Jev.
 
-[![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev/)
+[![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
 ![Entries](https://img.shields.io/badge/entries-83-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
@@ -197,7 +197,7 @@ Open a pull request. Link the paper or the primary page, add the code repository
 @misc{awesome_jev,
   title        = {Awesome JEV},
   year         = {2026},
-  howpublished = {\url{https://github.com/OmniJev/awesome-jev}},
+  howpublished = {\url{https://github.com/OmniJev/awesome-jev-gallery}},
   note         = {Papers, open models and evaluations behind System One models and typed decisions}
 }
 ```
