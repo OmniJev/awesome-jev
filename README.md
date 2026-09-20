@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-83-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-84-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-20-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-19-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-17-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-46-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-47-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -26,7 +26,8 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (20)
+- [🧪 Open Source](#-open-source) (19)
+- [🔧 Built with Jev](#-built-with-jev) (2)
 - [📊 Independent Evaluations](#-independent-evaluations) (18)
 - [📰 Commentary & Analysis](#-commentary--analysis) (8)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -38,9 +39,9 @@
 
 ## 🔥 News
 
-🚀 **2026-09 · Repository launch.** 83 entries in 7 sections. PRs welcome.
+🚀 **2026-09 · Repository launch.** 84 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 20 open models and codebases rebuild the System One shape, and 17 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 19 open models and codebases rebuild the System One shape, and 17 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -68,7 +69,6 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [PlayJev](https://github.com/OmniJev/PlayJev), Qwen3.5-0.8B-Base fine-tuned to play ten browser games from raw pixels, one frame in, one typed move out. [![Code](https://img.shields.io/github/stars/OmniJev/PlayJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OmniJev/PlayJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/OmniJev/PlayJev-0.8B) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://omnijev.github.io/PlayJev/)
 - [Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD), Qwen2.5-1.5B fine-tune plus parallel constrained decoding; all schema fields scored in one broadcast prefill, 5.6x to 7x faster on Apple Silicon. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)
 - [openjev-sglang](https://github.com/ekzhang/openjev-sglang), Jev-compatible API endpoint served from open models with prefill-only inference. [![Code](https://img.shields.io/github/stars/ekzhang/openjev-sglang?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/ekzhang/openjev-sglang)
-- [dspy-typesafeify](https://github.com/typesafeainate/dspy-typesafeify), Decorator that routes DSPy typed Signatures to Jev where the signature is a pure decision. [![Code](https://img.shields.io/github/stars/typesafeainate/dspy-typesafeify?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafeainate/dspy-typesafeify)
 - [typesafe-ai-benchmark (imposter Jev)](https://github.com/iammrduncan/typesafe-ai-benchmark), LLM gateway that mimics the TypeSafe structured-output contract, used for Qwen-on-Cerebras side-by-sides. [![Code](https://img.shields.io/github/stars/iammrduncan/typesafe-ai-benchmark?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/iammrduncan/typesafe-ai-benchmark)
 - [decider](https://github.com/Mapika/decider), Qwen3.5-2B fine-tune that emits typed decisions with calibrated probabilities in one pass. [![Code](https://img.shields.io/github/stars/Mapika/decider?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Mapika/decider)
 - [Jev on a laptop](https://github.com/rorshopping/jev-on-a-laptop), Unofficial study of Jev-style parallel typed decisions on stock 1.5B to 8B models on Apple Silicon, with benchmarks. [![Code](https://img.shields.io/github/stars/rorshopping/jev-on-a-laptop?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/rorshopping/jev-on-a-laptop) [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/rorshopping/parallel-constrained-decisions)
@@ -83,6 +83,15 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [system-one-qwen3.5-4b-scorer](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer), Qwen3.5-4B base trained as a Score-style rubric rater. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/pngwn/system-one-qwen3.5-4b-scorer)
 - [LFM2.5-350M-RLCD](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD), 350M-parameter RLCD-style decision model, the smallest open attempt. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD)
 - [system-one-mini](https://huggingface.co/DavidHatley/system-one-mini), DistilBERT-sized System One shape, a floor for how small the idea can go. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/DavidHatley/system-one-mini)
+
+---
+
+## 🔧 Built with Jev
+
+Open, licensed software that puts Jev inside something that runs: routers, agents, games and integrations. Each entry links code you can read and numbers its authors measured themselves.
+
+- [JevRouter](https://github.com/BillionsBobby/JevRouter), Routes models, subagents, Skills and MCP tools through one typed Jev question, with its own permission and confirmation rules around the answer; 44 percent first-five tool-call hits on 10 Toolathlon tasks against 24 percent for DeepSeek V4.1 Flash. [![Code](https://img.shields.io/github/stars/BillionsBobby/JevRouter?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/BillionsBobby/JevRouter) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.jevrouter.co/)
+- [dspy-typesafeify](https://github.com/typesafeainate/dspy-typesafeify), Decorator that routes DSPy typed Signatures to Jev where the signature is a pure decision. [![Code](https://img.shields.io/github/stars/typesafeainate/dspy-typesafeify?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/typesafeainate/dspy-typesafeify)
 
 ---
 

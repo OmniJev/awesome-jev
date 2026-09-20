@@ -11,10 +11,11 @@ Jev is new and the literature about it is thin, so the list is sized to the evid
 | **Primary** | the entry is by TypeSafe, or it directly reproduces or evaluates Jev |
 | **Named** | TypeSafe's own materials or the launch discussion named it as what Jev is, or what Jev replaces |
 | **Same shape** | the answer set is fixed before inference, the model returns a probability per option, and no free text is generated |
+| **Built with Jev** | the project calls Jev in a path that runs, and its code, licence and own measurements are public |
 
 Say in your pull request which test the entry passes, in one line. Work that is merely adjacent (general LLM calibration, general routing, general safety) stays out, however good it is.
 
-Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope here.
+Projects that *use* Jev (routers, SDKs, agents, games, integrations) belong in **Built with Jev**. They need a public repository, a licence, and numbers you measured yourself. A landing page with no code stays out.
 
 ## Before opening a pull request
 
@@ -29,6 +30,7 @@ Projects that *use* Jev (SDKs, routers, games, integrations) are out of scope he
 |:--|:--|
 | ⚡ System One & Jev | TypeSafe's own pages, SDKs, essays and the launch discussion |
 | 🧪 Open Source | open weights or code that rebuild the System One shape |
+| 🔧 Built with Jev | software that calls Jev: routers, agents, games, integrations |
 | 📊 Independent Evaluations | any published test of Jev, with its headline number |
 | 📰 Commentary & Analysis | reporting and analysis that checks the claims against the evidence |
 | 🧬 The Shape Before Jev | earlier work with the same input and output shape |
