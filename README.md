@@ -8,7 +8,7 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-133-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-134-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-35-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-20-F0545C?style=flat-square&logo=speedtest&logoColor=white)
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (35)
-- [🔧 Built with Jev](#-built-with-jev) (33)
+- [🔧 Built with Jev](#-built-with-jev) (34)
 - [📊 Independent Evaluations](#-independent-evaluations) (21)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -41,7 +41,7 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 133 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 134 entries in 8 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 35 open models and codebases rebuild the System One shape, and 20 independent evaluations of Jev are collected under Independent Evaluations.
 
@@ -141,6 +141,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [Jev × LIBERO](https://github.com/Dimweaker/jev-libero), Fine-grained robot control on LIBERO with Jev deciding and physics-grounded execution. [![Code](https://img.shields.io/github/stars/Dimweaker/jev-libero?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Dimweaker/jev-libero)
 - [jev-robot-control](https://github.com/openroboto-ai/jev-robot-control), Same task, different decisions: Jev against GPT-4.1 and GPT-4o mini on a robot arm, with cost and time per episode. [![Code](https://img.shields.io/github/stars/openroboto-ai/jev-robot-control?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/openroboto-ai/jev-robot-control)
 - [tsai-sc](https://github.com/phyous/tsai-sc), TypeSafe Jev controls the original StarCraft, one typed decision per game tick. [![Code](https://img.shields.io/github/stars/phyous/tsai-sc?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/phyous/tsai-sc)
+- [Refix](https://refix.ai/?utm_source=awesome-jev&utm_medium=github&utm_campaign=omnijev), Growth: AI that helps your product grow faster on autopilot by running product experiments, SEO, content, and ads. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://refix.ai/)
 
 ---
 
