@@ -247,7 +247,7 @@ The two sibling lists.
 
 ## Contributing
 
-Open a pull request. Link the paper or the primary page, add the code repository or Hugging Face path if there is one, and say in one line which of the three tests above the entry passes. See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry format.
+Open a pull request. Link the paper or the primary page, add the code repository or Hugging Face path if there is one, and say in one line which of the four tests above the entry passes. See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry format.
 
 ---
 
