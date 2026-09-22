@@ -4,7 +4,7 @@ Thanks for helping. The goal is a compact, high-signal research map of System On
 
 ## The test
 
-Jev is new and the literature about it is thin, so the list is sized to the evidence. An entry is in when it passes at least one of three tests.
+Jev is new and the literature about it is thin, so the list is sized to the evidence. An entry is in when it passes at least one of four tests.
 
 | Test | Passes when |
 |:--|:--|
@@ -21,7 +21,7 @@ Projects that *use* Jev (routers, SDKs, agents, games, integrations) belong in *
 
 - Check whether the paper, model or evaluation is already listed.
 - Use the primary paper or preprint URL, the official code repository, and the official model or project page.
-- Verify every link resolves. Run `python3 scripts/check_links.py README.md`.
+- Check the links you are adding. Run `npm run links:new`.
 - Keep claims at the level the linked work supports.
 
 ## Where does an entry go?
@@ -77,10 +77,18 @@ Omit a badge rather than pointing it at a mirror. Do not add a stars badge when 
 
 ~~~bash
 npm install
-npm run lint     # structure, dead links, duplicate links, table of contents
-npm run counts   # the badge, contents and News numbers match the entries
-npm run links    # every URL resolves
+npm run lint       # structure, duplicate links, table of contents
+npm run counts     # the badge, contents and News numbers match the entries
+npm run links:new  # the URLs your branch adds
 ~~~
+
+`npm run links` checks the whole list instead, which takes a few minutes and is
+rarely what a single entry needs.
+
+A link check fails on one thing: a server answering 404 or 410. A host that
+refuses scripts, rate limits them or drops the connection is printed as
+unchecked, and neither that nor the whole Links job can block a merge. There is
+no need to explain a refusal in your pull request.
 
 Adding an entry changes the numbers in the header badges, the table of contents
 and the News paragraph. `npm run counts` prints each one with the value the
@@ -90,11 +98,11 @@ README's own contents imply, so set them to what it shows.
 
 ## Pull request checklist
 
-- [ ] The entry passes one of the three tests, and the PR says which.
+- [ ] The entry passes one of the four tests, and the PR says which.
 - [ ] The paper or primary page is linked, and the arXiv id in the badge matches it.
 - [ ] Official code or model links are included when they exist.
 - [ ] The description is one clause, concrete, and at the level the source supports.
-- [ ] `npm run counts` and `python3 scripts/check_links.py README.md` pass.
+- [ ] `npm run counts` and `npm run links:new` pass.
 - [ ] Section placement is right and the entry is not duplicated elsewhere.
 
 ## Commit authorship

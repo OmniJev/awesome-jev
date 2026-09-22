@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "node scripts/lint.mjs README.md",
     "counts": "node scripts/check_counts.mjs README.md",
-    "links": "python3 scripts/check_links.py README.md"
+    "links": "python3 scripts/check_links.py README.md",
+    "links:new": "python3 scripts/check_links.py --added origin/main README.md"
   },
   "devDependencies": {
     "awesome-lint": "^2.3.0",

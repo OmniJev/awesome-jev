@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
-"""Check every URL in the README actually resolves.
+"""Check the URLs in the README actually resolve.
 
 Usage:  python3 scripts/check_links.py [README.md ...]
-Exit code 1 if any link is dead. shields.io badge images are skipped.
+        python3 scripts/check_links.py --added origin/main README.md
+
+Exit code 1 only when a server answers that the page is gone (404 or 410).
+A host that refuses the request, rate limits it or drops the connection is
+reported as unchecked, because that is what it is: from a data centre IP half
+the web says no to a script. Those lines are printed so a human can glance at
+them, and they do not fail the run. shields.io badge images are skipped.
+
+--added <ref> narrows the run to the URLs a branch introduces, which is what a
+pull request needs: adding one entry should not re-probe two hundred URLs.
 """
 import concurrent.futures as cf
 import re
+import subprocess
 import sys
 import threading
 import time
@@ -13,9 +23,9 @@ import urllib.error
 import urllib.request
 
 SKIP_HOSTS = ("img.shields.io", "awesome.re", "api.star-history.com", "contrib.rocks")
-# Hosts that refuse automated requests outright. The URLs are real; the site
-# answers 403/405 to anything that is not a browser. Reported separately so a
-# blocked host never looks like a dead link.
+# Hosts already known to refuse automated requests. The URLs are real; the site
+# answers 403/405 to anything that is not a browser. Listing one here only
+# changes how its line reads; no host can fail the run on a refusal.
 BOT_BLOCKED = (
     "openai.com", "openalex.org", "materialsproject.org", "encodeproject.org",
     "earthdata.nasa.gov", "data.gesis.org", "ai.nejm.org", "icpsr.umich.edu",
@@ -99,44 +109,91 @@ def _probe(clean):
     return clean, 0, "unreachable"
 
 
-def main(paths):
+# A server that answers 404 or 410 has told us the page is gone. Everything
+# else, a refusal, a rate limit, a dropped connection, a DNS hiccup, means the
+# check did not get an answer, which is not the same as a dead link.
+GONE = (404, 410)
+
+
+def wanted(url):
+    return not (any(h in url for h in SKIP_HOSTS) or any(x in url for x in SKIP_SUBSTRINGS))
+
+
+def urls_in(paths):
     urls = []
     for p in paths:
         with open(p, encoding="utf-8") as fh:
             for u in URL_RE.findall(fh.read()):
                 u = u.rstrip('.,;:')
-                if any(h in u for h in SKIP_HOSTS) or any(x in u for x in SKIP_SUBSTRINGS):
-                    continue
-                if u not in urls:
+                if wanted(u) and u not in urls:
                     urls.append(u)
-    print(f"checking {len(urls)} unique urls\n", flush=True)
-    bad, blocked = [], []
+    return urls
+
+
+def urls_added(ref, paths):
+    """The URLs this branch introduces, read from the diff against ref."""
+    try:
+        diff = subprocess.run(["git", "diff", "--unified=0", f"{ref}...HEAD", "--", *paths],
+                              capture_output=True, text=True, check=True).stdout
+    except (subprocess.CalledProcessError, FileNotFoundError) as e:
+        print(f"cannot diff against {ref} ({e}); checking every url instead\n", flush=True)
+        return urls_in(paths)
+    out = []
+    for line in diff.splitlines():
+        if line.startswith("+") and not line.startswith("+++"):
+            for u in URL_RE.findall(line):
+                u = u.rstrip('.,;:')
+                if wanted(u) and u not in out:
+                    out.append(u)
+    return out
+
+
+def main(argv):
+    ref = None
+    if argv and argv[0] == "--added":
+        ref, argv = argv[1], argv[2:]
+    paths = argv or ["README.md"]
+    urls = urls_added(ref, paths) if ref else urls_in(paths)
+    if ref:
+        print(f"checking the {len(urls)} urls this branch adds, against {ref}\n", flush=True)
+        if not urls:
+            print("no new urls")
+            return 0
+    else:
+        print(f"checking {len(urls)} unique urls\n", flush=True)
+
+    gone, unchecked = [], []
     done = 0
     with cf.ThreadPoolExecutor(max_workers=12) as ex:
         for url, code, msg in ex.map(probe, urls):
             done += 1
             ok = 200 <= code < 400
-            if not ok and any(h in url for h in BOT_BLOCKED) and code in (0, 403, 405, 429):
-                blocked.append((url, code))
-                print(f"[{done:>3}/{len(urls)}] blk {code:>3}  {url}", flush=True)
-                continue
-            if not ok:
-                bad.append((url, code, msg))
-            print(f"[{done:>3}/{len(urls)}] {'ok ' if ok else 'BAD'} {code:>3}  {url}", flush=True)
+            if ok:
+                mark = "ok "
+            elif code in GONE:
+                mark = "GONE"
+                gone.append((url, code, msg))
+            else:
+                mark = "??? "
+                known = any(h in url for h in BOT_BLOCKED)
+                unchecked.append((url, code, "refuses scripts" if known else msg))
+            print(f"[{done:>3}/{len(urls)}] {mark} {code:>3}  {url}", flush=True)
+
     print("\n" + "=" * 70)
-    if blocked:
-        print(f"{len(blocked)} links on hosts that block bots (URL is fine, checked by hand):")
-        for url, code in blocked:
-            print(f"  {code:>3}  {url}")
+    if unchecked:
+        print(f"{len(unchecked)} not checked from here (refused, rate limited or unreachable);")
+        print("the URL may well be fine, open it in a browser if it matters:")
+        for url, code, msg in unchecked:
+            print(f"  {code:>3}  {url}  {msg}")
         print()
-    if bad:
-        print(f"{len(bad)} DEAD LINKS")
-        for url, code, msg in bad:
+    if gone:
+        print(f"{len(gone)} DEAD LINKS, the server says the page is gone:")
+        for url, code, msg in gone:
             print(f"  {code:>3}  {url}  {msg}")
         return 1
-    print("all links ok")
+    print("no dead links")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:] or ["README.md"]))
+    sys.exit(main(sys.argv[1:]))

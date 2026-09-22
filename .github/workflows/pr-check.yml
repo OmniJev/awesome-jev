@@ -34,6 +34,16 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run counts
+      - name: What to do if this failed
+        if: failure()
+        run: |
+          {
+            echo "### List structure"
+            echo
+            echo "\`npm run counts\` prints every number with the value the README's own"
+            echo "contents imply. Set the badges, the table of contents and the News"
+            echo "paragraph to what it shows, then push again."
+          } >> "$GITHUB_STEP_SUMMARY"
 
   links:
     name: Links
@@ -41,7 +51,27 @@ jobs:
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: npm run links
+      - name: Links this branch adds
+        id: links
+        run: python3 scripts/check_links.py --added "${{ github.event.pull_request.base.sha }}" README.md
+      - name: Say what this check means
+        if: always()
+        run: |
+          {
+            echo "### Links"
+            echo
+            if [ "${{ steps.links.outcome }}" = "success" ]; then
+              echo "The URLs this branch adds resolve."
+            else
+              echo "A URL this branch adds answered 404 or 410. Only that fails the step;"
+              echo "a host that refuses scripts, rate limits them or drops the connection"
+              echo "is reported as unchecked and does not count against the pull request."
+            fi
+            echo
+            echo "This check never blocks a merge."
+          } >> "$GITHUB_STEP_SUMMARY"
