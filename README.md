@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-132-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-133-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-35-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-20-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-95-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-96-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (35)
-- [🔧 Built with Jev](#-built-with-jev) (32)
+- [🔧 Built with Jev](#-built-with-jev) (33)
 - [📊 Independent Evaluations](#-independent-evaluations) (21)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -41,7 +41,7 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 132 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 133 entries in 8 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 35 open models and codebases rebuild the System One shape, and 20 independent evaluations of Jev are collected under Independent Evaluations.
 
@@ -115,6 +115,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [Laya vs Jev: T-Rex arena](https://github.com/virajbhartiya/laya-vs-jev), Local Laya and hosted Jev play the same T-Rex course; both finish two published assisted rounds without deaths, with planner-provided move labels and safety interventions explicitly logged. [![Code](https://img.shields.io/github/stars/virajbhartiya/laya-vs-jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/virajbhartiya/laya-vs-jev)
 - [QuantDinger](https://github.com/OpenByteInc/QuantDinger), Open-source AI trading OS with Jev System One decisions inside its agent and vibe trading loops. [![Code](https://img.shields.io/github/stars/OpenByteInc/QuantDinger?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OpenByteInc/QuantDinger) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://ai.quantdinger.com)
 - [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast), Browser agent whose every step is one Jev choice over an indexed element table, a small LLM types only when the action is TYPE_TEXT; Zürich to London on Google Flights in 7.1 seconds. [![Code](https://img.shields.io/github/stars/browser-use/jev-ultrafast?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/browser-use/jev-ultrafast) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://browser-use.com/ultrafast)
+- [Jev Social](https://github.com/socai-io/jev-social), Browser-grounded Instagram, TikTok and LinkedIn research where Jev chooses each bounded search/read operation and socai executes it in the user's Chrome; a recorded 63.969-second Instagram run captures four source-linked records after two searches and one post-detail read. [![Code](https://img.shields.io/github/stars/socai-io/jev-social?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/socai-io/jev-social) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://socai-io.github.io/jev-social/)
 - [fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction), Claude Code plugin that replaces the compaction summary with Jev decisions: every tool call and result scored in one request, stale ones dropped, everything kept verbatim. [![Code](https://img.shields.io/github/stars/tamaratran/fast-jev-compaction?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/tamaratran/fast-jev-compaction)
 - [jev-trader](https://github.com/jarrodwatts/jev-trader), One Jev decision every Monad block: buy or sell on the Kuru MON-USDC order book every 300 ms, each answer posted as a real limit order. [![Code](https://img.shields.io/github/stars/jarrodwatts/jev-trader?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/jarrodwatts/jev-trader)
 - [Distill](https://github.com/samuelfaj/distill), Lightweight coding-agent harness and TUI that routes its small decisions through Jev. [![Code](https://img.shields.io/github/stars/samuelfaj/distill?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/samuelfaj/distill)
