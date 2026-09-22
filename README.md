@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-133-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-134-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-35-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
-![Jev evals](https://img.shields.io/badge/Jev%20evals-20-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-96-181717?style=flat-square&logo=github&logoColor=white)
+![Jev evals](https://img.shields.io/badge/Jev%20evals-21-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-97-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -28,7 +28,7 @@
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (35)
 - [🔧 Built with Jev](#-built-with-jev) (33)
-- [📊 Independent Evaluations](#-independent-evaluations) (21)
+- [📊 Independent Evaluations](#-independent-evaluations) (22)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 133 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 134 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 35 open models and codebases rebuild the System One shape, and 20 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 35 open models and codebases rebuild the System One shape, and 21 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -154,6 +154,7 @@ Every independent test of Jev published so far, with the headline number where t
 - [jev-benchmarks (probability-aware)](https://github.com/AbdelStark/jev-benchmarks), Jev versus GLiNER2.5 on 300 BTZSC examples with calibration and selective risk: 0.910 AG News, 0.870 Banking77, worse on emotion. [![Code](https://img.shields.io/github/stars/AbdelStark/jev-benchmarks?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/AbdelStark/jev-benchmarks)
 - [jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench), Jev as reranker over 8 datasets and 1,617 questions: nDCG@10 0.692 versus Cohere Rerank 4 Pro 0.691, at 422ms. [![Code](https://img.shields.io/github/stars/anessbelbati/jev-rerank-bench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/anessbelbati/jev-rerank-bench) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://anessbelbati.com/lab/jev-reranking/)
 - [jev-sec-bench](https://github.com/Gaurav-Gosain/jev-sec-bench), Blind prompt-injection run on 662 deepset messages: 96.5% accuracy, 0.9927 ROC-AUC, ECE 0.0588, p50 325ms. [![Code](https://img.shields.io/github/stars/Gaurav-Gosain/jev-sec-bench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Gaurav-Gosain/jev-sec-bench)
+- [Jevals](https://jevals.com/), Jev and six LLMs answer the same Noul, Choice and Score questions against human labels, 300 items and 5 runs per task: Jev ties the best LLM on PubMedQA yes/no (91.3% versus 92.5%) at 1/28 of its cost, and reaches 79.7% on Banking77. [![Code](https://img.shields.io/github/stars/Jevals/jevals-data?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Jevals/jevals-data) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://jevals.com/)
 - [TypeSafe Jev evals dashboard](https://evals.typesafe.ai/), TypeSafe's own four-workflow dashboard, Jev at 61.7 to 76.0% accuracy and 0.3 to 0.5s per case against frontier baselines. [![TypeSafe](https://img.shields.io/badge/TypeSafe-docs-2F80ED?style=flat-square&logo=readthedocs&logoColor=white)](https://evals.typesafe.ai/) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://evals.typesafe.ai/)
 - [jev-eval-agent](https://github.com/vinilana/jev-eval-agent), Jev routes 100 mocked tools behind a confidence gate, measuring steps, tool calls, tokens and cost against the LLM choosing directly. [![Code](https://img.shields.io/github/stars/vinilana/jev-eval-agent?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/vinilana/jev-eval-agent)
 - [jev-use benchmarks](https://github.com/shitianfang/jev-use/blob/main/bench/RESULTS.md), 454 judgments against a Claude Opus 5 reference: 82.2% agreement, 89.5% among non-escalated verdicts, over a 68.7% majority baseline; context compaction 56.3%, below a constant answerer. [![Code](https://img.shields.io/github/stars/shitianfang/jev-use?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/shitianfang/jev-use)
