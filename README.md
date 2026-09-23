@@ -143,6 +143,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [Jev × LIBERO](https://github.com/Dimweaker/jev-libero), Fine-grained robot control on LIBERO with Jev deciding and physics-grounded execution. [![Code](https://img.shields.io/github/stars/Dimweaker/jev-libero?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/Dimweaker/jev-libero)
 - [jev-robot-control](https://github.com/openroboto-ai/jev-robot-control), Same task, different decisions: Jev against GPT-4.1 and GPT-4o mini on a robot arm, with cost and time per episode. [![Code](https://img.shields.io/github/stars/openroboto-ai/jev-robot-control?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/openroboto-ai/jev-robot-control)
 - [tsai-sc](https://github.com/phyous/tsai-sc), TypeSafe Jev controls the original StarCraft, one typed decision per game tick. [![Code](https://img.shields.io/github/stars/phyous/tsai-sc?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/phyous/tsai-sc)
+- [jgrep](https://github.com/kyu1204/jgrep), Code search, diff gate and test selection with one Jev Noul per chunk, 16 chunks per request; the author measures a 238-chunk TypeScript tree in 1.0 s for $0.003 and `--tests` picking tests for a diff in one 3,430-token request. [![Code](https://img.shields.io/github/stars/kyu1204/jgrep?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/kyu1204/jgrep)
 
 ---
 
