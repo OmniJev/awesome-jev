@@ -8,7 +8,7 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-137-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-138-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-37-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-21-F0545C?style=flat-square&logo=speedtest&logoColor=white)
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (37)
-- [🔧 Built with Jev](#-built-with-jev) (34)
+- [🔧 Built with Jev](#-built-with-jev) (35)
 - [📊 Independent Evaluations](#-independent-evaluations) (22)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -41,7 +41,7 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 137 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 138 entries in 8 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 37 open models and codebases rebuild the System One shape, and 21 independent evaluations of Jev are collected under Independent Evaluations.
 
@@ -146,6 +146,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [jgrep](https://github.com/kyu1204/jgrep), Code search, diff gate and test selection with one Jev Noul per chunk, 16 chunks per request; the author measures a 238-chunk TypeScript tree in 1.0 s for $0.003 and `--tests` picking tests for a diff in one 3,430-token request. [![Code](https://img.shields.io/github/stars/kyu1204/jgrep?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/kyu1204/jgrep)
 
 ---
+- [Refix](https://refix.ai), Growth autopilot where Jev scores each experiment result against a promotion bar and chooses the next SEO, content, or ad play; below-threshold results are escalated. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://refix.ai/)
 
 ## 📊 Independent Evaluations
 
