@@ -8,9 +8,9 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-137-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-139-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-37-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-39-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-21-F0545C?style=flat-square&logo=speedtest&logoColor=white)
 ![With code](https://img.shields.io/badge/with%20code-100-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (37)
+- [🧪 Open Source](#-open-source) (39)
 - [🔧 Built with Jev](#-built-with-jev) (34)
 - [📊 Independent Evaluations](#-independent-evaluations) (22)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 137 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 139 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 37 open models and codebases rebuild the System One shape, and 21 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 21 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -76,6 +76,8 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [Laya Ultrafast](https://github.com/ipenywis/laya-ultrafast), Local MLX port of Jev Ultrafast with a redesigned narrow-decision policy; authors report five successful Google Flights runs in 7.5 to 12.1 seconds on an M1 Max. [![Code](https://img.shields.io/github/stars/ipenywis/laya-ultrafast?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/ipenywis/laya-ultrafast)
 - [SemIf](https://github.com/TheoLeeCJ/SemIf), Semantic ifs from open models on a 3090 at home; open baseline for direct typed option scoring, renamed from openjev. [![Code](https://img.shields.io/github/stars/TheoLeeCJ/SemIf?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/TheoLeeCJ/SemIf) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://openjev.com)
 - [Jevlike](https://github.com/vinnylarouge/jevlike), From-scratch model with Jev's exact shape: text plus N options in, one probability per option out, option-attention head, Doom and chess demos. [![Code](https://img.shields.io/github/stars/vinnylarouge/jevlike?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/vinnylarouge/jevlike)
+- [SLEEPJEV (Sleep-JEV)](https://github.com/PAI-CUHK/SLEEPJEV), PSG-native local decision model with one reusable overnight representation, sparse retrieval, and runtime Choice/Noul/Score probabilities over fixed candidate sets; includes a real SHHS-derived replay demo. [![Code](https://img.shields.io/github/stars/PAI-CUHK/SLEEPJEV?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/PAI-CUHK/SLEEPJEV) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://pai-cuhk.github.io/SLEEPJEV/)
+- [MEDJEV](https://github.com/PAI-CUHK/MEDJEV), Independent JEV-inspired biomedical evidence decision implementation with runtime candidate semantics, Choice/Score/Noul-style outputs, calibration metadata, and a PubMedQA development evaluation; not an official Jev API or SDK. [![Code](https://img.shields.io/github/stars/PAI-CUHK/MEDJEV?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/PAI-CUHK/MEDJEV) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://pai-cuhk.github.io/MEDJEV/)
 - [Prosodia](https://github.com/alperiox/audio-jevlike), Audio-native model with Jev's shape: speech plus N options in, one probability per option out, no ASR and no generated text; questions and option sets are supplied per request. [![Code](https://img.shields.io/github/stars/alperiox/audio-jevlike?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/alperiox/audio-jevlike) [![Space](https://img.shields.io/badge/%F0%9F%A4%97%20Space-FFD21E?style=flat-square)](https://huggingface.co/spaces/alperiox/prosodia)
 - [PlayJev](https://github.com/OmniJev/PlayJev), Qwen3.5-0.8B-Base fine-tuned to play ten browser games from raw pixels, one frame in, one typed move out. [![Code](https://img.shields.io/github/stars/OmniJev/PlayJev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/OmniJev/PlayJev) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/OmniJev/PlayJev-0.8B) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://omnijev.github.io/PlayJev/)
 - [Qwen-2.5-1B-RLCD](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD), Qwen2.5-1.5B fine-tune plus parallel constrained decoding; all schema fields scored in one broadcast prefill, 5.6x to 7x faster on Apple Silicon. [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD)
