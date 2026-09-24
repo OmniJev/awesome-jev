@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-139-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-140-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-39-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
-![Jev evals](https://img.shields.io/badge/Jev%20evals-21-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-100-181717?style=flat-square&logo=github&logoColor=white)
+![Jev evals](https://img.shields.io/badge/Jev%20evals-22-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-102-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -28,7 +28,7 @@
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (39)
 - [🔧 Built with Jev](#-built-with-jev) (34)
-- [📊 Independent Evaluations](#-independent-evaluations) (22)
+- [📊 Independent Evaluations](#-independent-evaluations) (23)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 139 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 140 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 21 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 22 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -155,6 +155,7 @@ Every independent test of Jev published so far, with the headline number where t
 
 - [DeepSearcher search-stopping evaluation](https://github.com/zilliztech/deep-searcher/blob/master/evaluation/jev_stopping/README.md), Jev and a DeepSeek stopping baseline both reach 93.25% supporting-document Recall@5 on 100 sampled 2WikiMultiHopQA queries, replayed over shared seven-round search trajectories; includes reproduction code and archived results.
 - [JevBench](https://github.com/fstandhartinger/jevbench), 534-decision benchmark with public task results and a v1.3 composite over intelligence, calibration, speed and cost; Jev scores 74.4, with assumed latency adjustments for self-hosted endpoints disclosed. [![Code](https://img.shields.io/github/stars/fstandhartinger/jevbench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/fstandhartinger/jevbench) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://benchmarkheaven.com/jev-models)
+- [MemSearch reranking evaluation](https://github.com/zilliztech/memsearch/blob/main/evaluation/reranking-evaluation.md), Jev reaches 79.41% Recall@5 versus 81.87% for Voyage rerank-3 over 4,344 Chinese/English query variants with fixed candidates; the memory corpus requires an authorized copy.
 - [sysone-bench](https://github.com/instax-dutta/sysone-bench), September 21 comparison of Jev, Laya and Qwen-PCD on 751 states across nine suites with identical questions; Jev leads moderation 98.9% to Laya's 83.3%, while Laya leads AG News 94% to 91%. [![Code](https://img.shields.io/github/stars/instax-dutta/sysone-bench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/instax-dutta/sysone-bench)
 - [jev-benchmarks (probability-aware)](https://github.com/AbdelStark/jev-benchmarks), Jev versus GLiNER2.5 on 300 BTZSC examples with calibration and selective risk: 0.910 AG News, 0.870 Banking77, worse on emotion. [![Code](https://img.shields.io/github/stars/AbdelStark/jev-benchmarks?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/AbdelStark/jev-benchmarks)
 - [jev-rerank-bench](https://github.com/anessbelbati/jev-rerank-bench), Jev as reranker over 8 datasets and 1,617 questions: nDCG@10 0.692 versus Cohere Rerank 4 Pro 0.691, at 422ms. [![Code](https://img.shields.io/github/stars/anessbelbati/jev-rerank-bench?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/anessbelbati/jev-rerank-bench) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://anessbelbati.com/lab/jev-reranking/)
