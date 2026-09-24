@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-141-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-142-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-39-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-23-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-102-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-103-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -27,7 +27,7 @@
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (39)
-- [🔧 Built with Jev](#-built-with-jev) (34)
+- [🔧 Built with Jev](#-built-with-jev) (35)
 - [📊 Independent Evaluations](#-independent-evaluations) (24)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
@@ -41,7 +41,7 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 141 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 142 entries in 8 sections. PRs welcome.
 
 🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 23 independent evaluations of Jev are collected under Independent Evaluations.
 
@@ -133,6 +133,7 @@ Open, licensed software that puts Jev inside something that runs: routers, agent
 - [quackd](https://github.com/rokbenko/quackd), One CLI for open-source robots such as LeRobot arms and Open Duck, with Jev choosing which taught move comes next. [![Code](https://img.shields.io/github/stars/rokbenko/quackd?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/rokbenko/quackd)
 - [Abide](https://github.com/coldteadotai/abide), Enforces the rules in AGENTS.md and CLAUDE.md that no linter can check: one Jev question per rule on every edit, about 300 ms each. [![Code](https://img.shields.io/github/stars/coldteadotai/abide?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/coldteadotai/abide)
 - [JevRouter](https://github.com/BillionsBobby/JevRouter), Routes models, subagents, Skills and MCP tools through one typed Jev question, with its own permission and confirmation rules around the answer; 44 percent first-five tool-call hits on 10 Toolathlon tasks against 24 percent for DeepSeek V4.1 Flash. [![Code](https://img.shields.io/github/stars/BillionsBobby/JevRouter?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/BillionsBobby/JevRouter) [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://www.jevrouter.co/)
+- [Codex Jev Router](https://github.com/suenot/codex-jev-router), Selects Codex subagent models with Jev; its controlled 24-run benchmark reports 12/12 correct answers in each arm, with routing using 3.9% more tokens and time but an estimated 52% lower API bill at published rates. [![Code](https://img.shields.io/github/stars/suenot/codex-jev-router?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/suenot/codex-jev-router)
 - [jev-drone](https://github.com/RomanSlack/jev-drone), Quadrotor flies a five-station MuJoCo obstacle course from its onboard camera, Jev at 2.5 Hz deciding what the situation means while the controller stays in code. [![Code](https://img.shields.io/github/stars/RomanSlack/jev-drone?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/RomanSlack/jev-drone)
 - [YouTube sponsor detection](https://github.com/trungdq88/youtube-sponsor-detection), Detects sponsor segments from live audio and skips them, one Jev read per segment. [![Code](https://img.shields.io/github/stars/trungdq88/youtube-sponsor-detection?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/trungdq88/youtube-sponsor-detection)
 - [jevmeter](https://github.com/ChetasLua/jevmeter), Puts a live Jev score meter on any video, installed in three steps. [![Code](https://img.shields.io/github/stars/ChetasLua/jevmeter?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/ChetasLua/jevmeter)
