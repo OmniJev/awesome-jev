@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-139-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-140-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
 ![Open source](https://img.shields.io/badge/open%20source-39-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
-![Jev evals](https://img.shields.io/badge/Jev%20evals-21-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-100-181717?style=flat-square&logo=github&logoColor=white)
+![Jev evals](https://img.shields.io/badge/Jev%20evals-22-F0545C?style=flat-square&logo=speedtest&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-102-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -28,7 +28,7 @@
 - [⚡ System One & Jev](#-system-one--jev) (8)
 - [🧪 Open Source](#-open-source) (39)
 - [🔧 Built with Jev](#-built-with-jev) (34)
-- [📊 Independent Evaluations](#-independent-evaluations) (22)
+- [📊 Independent Evaluations](#-independent-evaluations) (23)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
 - [🧬 The Shape Before Jev](#-the-shape-before-jev) (15)
 - [🧱 What Jev Is Sold Against](#-what-jev-is-sold-against) (9)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 139 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 140 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 21 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 22 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -175,6 +175,7 @@ Every independent test of Jev published so far, with the headline number where t
 - [Every: Mini-Vibe Check](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds), 777 judgments over 37 articles in 0.7s for a quarter of a cent; caught six of seven planted defects, Fable seven. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://every.to/also-true-for-humans/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds)
 - [Jev is the fish at the poker table](https://backnotprop.com/blog/jev-poker/), Poker probe finding 15 to 30 point swings from relabelling the same hand, and 16 of 16 bets against a made flush. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://backnotprop.com/blog/jev-poker/)
 - [Jev judge call vs dimension scores](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/), One direct Jev question per row against 12 to 14 Jev-scored dimensions with fitted weights on three tasks: 0.9076 vs 0.8373 on Japanese NLI, but 25x the hard-benign false positives, 37.2% vs 1.5%. [![Website](https://img.shields.io/badge/Website-2EA44F?style=flat-square&logo=googlechrome&logoColor=white)](https://agentjournal.dev/blog/llm-judge-vs-feature-extraction/)
+- [Vector Graph RAG relation-reranker evaluation](https://github.com/zilliztech/vector-graph-rag/blob/main/evaluation/jev/README.md), Jev reaches 68.87% MuSiQue and 93.50% HotpotQA Recall@5 on 500 queries per dataset, with cached results, reproduction scripts, and explicit caveats for historical comparisons.
 
 ---
 
