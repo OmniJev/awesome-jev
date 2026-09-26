@@ -8,11 +8,11 @@
 
 [![Website](https://img.shields.io/badge/website-omnijev.github.io-2F80ED?style=flat-square&logo=githubpages&logoColor=white)](https://omnijev.github.io/awesome-jev-gallery/)
 
-![Entries](https://img.shields.io/badge/entries-142-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
+![Entries](https://img.shields.io/badge/entries-143-8A2BE2?style=flat-square&logo=bookstack&logoColor=white)
 ![Papers](https://img.shields.io/badge/papers-22-B31B1B?style=flat-square&logo=arxiv&logoColor=white)
-![Open source](https://img.shields.io/badge/open%20source-39-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
+![Open source](https://img.shields.io/badge/open%20source-40-0EA5E9?style=flat-square&logo=huggingface&logoColor=white)
 ![Jev evals](https://img.shields.io/badge/Jev%20evals-23-F0545C?style=flat-square&logo=speedtest&logoColor=white)
-![With code](https://img.shields.io/badge/with%20code-103-181717?style=flat-square&logo=github&logoColor=white)
+![With code](https://img.shields.io/badge/with%20code-104-181717?style=flat-square&logo=github&logoColor=white)
 ![Daily Papers](https://img.shields.io/badge/%F0%9F%A4%97%20daily%20papers-19-FFD21E?style=flat-square)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-10B981?style=flat-square&logo=creativecommons&logoColor=white)](LICENSE)
 
@@ -26,7 +26,7 @@
 
 - [🔥 News](#-news)
 - [⚡ System One & Jev](#-system-one--jev) (8)
-- [🧪 Open Source](#-open-source) (39)
+- [🧪 Open Source](#-open-source) (40)
 - [🔧 Built with Jev](#-built-with-jev) (35)
 - [📊 Independent Evaluations](#-independent-evaluations) (24)
 - [📰 Commentary & Analysis](#-commentary--analysis) (7)
@@ -41,9 +41,9 @@
 
 🆕 **2026-09-22 · Ecosystem refresh.** 14 additions: local and multimodal decision models, Android chat assistance, robot and game demos, calibration tools and comparative evaluations. All 14 have gallery cards; two older entries returning 404 were removed. [Reviewed sources and scope](updates/2026-09-22.md).
 
-🚀 **2026-09 · Collection status.** 142 entries in 8 sections. PRs welcome.
+🚀 **2026-09 · Collection status.** 143 entries in 8 sections. PRs welcome.
 
-🧪 **2026-09 · Open source and evaluations.** 39 open models and codebases rebuild the System One shape, and 23 independent evaluations of Jev are collected under Independent Evaluations.
+🧪 **2026-09 · Open source and evaluations.** 40 open models and codebases rebuild the System One shape, and 23 independent evaluations of Jev are collected under Independent Evaluations.
 
 ---
 
@@ -71,6 +71,7 @@ Open weights and code that rebuild the System One shape from encoders, small dec
 - [this-that-model](https://github.com/FLock-io/this-that-model), 1.88B fine-tune of decider-2b whose head scores only the declared option labels, so an answer outside the set cannot occur; authors report 0.775 on their released 1,710-question decision benchmark. [![Code](https://img.shields.io/github/stars/FLock-io/this-that-model?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/FLock-io/this-that-model) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/flock-io/this-that-model-1.1) [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-06B6D4?style=flat-square)](https://huggingface.co/datasets/limberc/this-that-complex-decisions)
 - [Dohnuts](https://github.com/PsiACE/dohnuts), 0.8B text-and-image decision model trained on one RX 7900 XTX; authors report 65.8% accuracy on 231 public JevBench tasks; Apache-2.0 code and non-commercial CC BY-NC-SA 4.0 weights. [![Code](https://img.shields.io/github/stars/PsiACE/dohnuts?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/PsiACE/dohnuts) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B)
 - [OpenThai-SystemOne](https://github.com/iapp-technology/openthai-systemone), Thai and English 0.8B decision model with a 256-way slot head and Jev-compatible API; authors report 90.0% accuracy on 5,007 held-out MASSIVE Thai intent examples. [![Code](https://img.shields.io/github/stars/iapp-technology/openthai-systemone?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/iapp-technology/openthai-systemone) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/iapp/OpenThai-SystemOne)
+- [sokudan](https://github.com/hiroki-abe-58/sokudan), Japanese 314.6M ModernBERT-ja decision model returning choice, score and bool probabilities in one forward pass with no generated text; authors report 3-seed means of 0.847 choice accuracy and 0.789 bool AUROC on their released 300-item bench_ja (CC BY 4.0, evaluation only), and that bool under-predicts true; Apache-2.0 code and weights. [![Code](https://img.shields.io/github/stars/hiroki-abe-58/sokudan?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/hiroki-abe-58/sokudan) [![Model](https://img.shields.io/badge/%F0%9F%A4%97%20Model-8B5CF6?style=flat-square)](https://huggingface.co/GeneLab/sokudan-ja-310m)
 - [open-jev (browser runtime)](https://github.com/nico-martin/open-jev), Browser TypeScript runtime for Kev and DeBERTa decision models through Transformers.js, returning typed probabilities with WebGPU or WebAssembly and no cloud inference. [![Code](https://img.shields.io/github/stars/nico-martin/open-jev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/nico-martin/open-jev)
 - [djev](https://github.com/mmastrac/djev), DiffusionGemma structured-read server that pins fixed answer text and denoises answer slots into per-option probabilities through Jev's API; requires the linked vLLM PR branch. [![Code](https://img.shields.io/github/stars/mmastrac/djev?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/mmastrac/djev)
 - [Laya Ultrafast](https://github.com/ipenywis/laya-ultrafast), Local MLX port of Jev Ultrafast with a redesigned narrow-decision policy; authors report five successful Google Flights runs in 7.5 to 12.1 seconds on an M1 Max. [![Code](https://img.shields.io/github/stars/ipenywis/laya-ultrafast?style=flat-square&logo=github&label=Code&color=181717)](https://github.com/ipenywis/laya-ultrafast)
